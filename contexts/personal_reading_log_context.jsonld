@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "author": "schema:author",
+    "title": "schema:name",
+    "firstImpression": "schema:description",
+    "description": "schema:comment",
+    "bookFormat": "schema:bookFormat",
+    "inLanguage": "schema:inLanguage",
+    "dateRead": {
+      "@id": "schema:dateRead",
+      "@type": "xsd:date"
+    },
+    "genre": {
+      "@id": "schema:genre",
+      "@type": "xsd:string"
+    }
+  }
+}
