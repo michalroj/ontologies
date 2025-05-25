@@ -2,6 +2,7 @@
   "@context": {
     "schema": "http://schema.org/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+
     "author": "schema:author",
     "title": "schema:name",
     "firstImpression": "schema:description",

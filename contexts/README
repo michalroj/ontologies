@@ -1,7 +1,0 @@
-This directory contains context file to be used as @contexts in JSON-LD documents.
-
-Currently the following context documents are available:
-
-- personal_reading_log_context.jsonld: the context useful to make notes about read books including author, title, opinion and some other informations.
-                                       This file will be further developed, esp. better concepts will proposed, however the current schema.org concepts 
-                                       are not complete nonsense.
