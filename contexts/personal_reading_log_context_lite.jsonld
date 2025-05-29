@@ -1,6 +1,5 @@
 {
   "@context": {
-    "dct": "http://purl.org/dc/terms",
     "schema": "http://schema.org/",
 
     "author": "schema:author",
@@ -11,6 +10,6 @@
     "dateRead": "schema:dateRead",
 
     "comment": "schema:comment",
-    "review": "schema:review",
+    "review": "schema:review"
   }
 }
