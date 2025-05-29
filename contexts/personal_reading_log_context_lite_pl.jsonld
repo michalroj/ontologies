@@ -4,7 +4,7 @@
     "schema": "http://schema.org/",
 
     "autor": "schema:author",
-    "tytuł": "dct:title",
+    "tytuł": "schema:name",
     "typ": "schema:genre",
     "język": "schema:inLanguage",
     "medium": "schema:bookFormat",
