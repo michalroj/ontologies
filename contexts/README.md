@@ -21,6 +21,7 @@ Currently the following context documents are available:
   6. dateRead: the date the book was read 
   7. comment: a short note about the book, one or two sentences usually covering the first impressions after the book have been read.
   8. review: a more systematic, longer description of the book usually taking the form of a review with personal remarks. 
+  9. keywords: keywords (optional) to be used if a position has some specific feature (e.g. is a mandatory reading or has won a prize)
 
  Context:
  In the file [personal_reading_log_context_lite.jsonld](personal_reading_log_context_lite.jsonld) there is the first version of the context specified using the concepts / relations
@@ -41,6 +42,7 @@ Currently the following context documents are available:
  6. "http://schema.org/dateRead": The date/time at which the message has been read by the recipient if a single recipient exists.
  7. "http://schema.org/comment": Comments, typically from users.
  8. "http://schema.org/review": A review of the item.
+ 9. "http://schema.org/keywords": Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.
 
  The meaning of the terms is close enough to the intention my fields (e.g. 'schema:author', 'schema:name' and 'schema:genre' are used in the https://schema.org/author example 
  in the very similar way). In addition, almost all above attributes (except 'schema:dateRead') are actually part of the 'schema:Book' objects.
@@ -58,6 +60,7 @@ Currently the following context documents are available:
                        an alternative attribute which is in the 'schema:Book' class would be 'schema:contentReferenceTime', 'schema:sdDatePublished', with the earlier having closer semantics
  7. "schema:comment": this seems ok, even if not fully expressing the 'short note' in our meaning.
  8. "schema:review": Sometimes the content is less a review but a description, similar in meaning to "dct:description"
+ 9. "schema:keywords": this seems ok. Has to be tested more.
 
 Even if I tried to apply Dublin Core as much as I could, schema.org offered me more precise terms for this application. However, an alternative approach (and more complex) would be to
 prepare custom ontologies with perfect semantics and labels in different languages (e.g. 'genres' or 'formats' might need update).

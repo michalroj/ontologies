@@ -7,9 +7,10 @@
     "genre": "schema:genre",
     "inLanguage": "schema:inLanguage",
     "bookFormat": "schema:bookFormat",
-    "dateRead": "schema:dateRead",
 
+    "dateRead": "schema:dateRead",
     "comment": "schema:comment",
-    "review": "schema:review"
+    "review": "schema:review",
+    "keywords": "schema:keywords"
   }
 }
