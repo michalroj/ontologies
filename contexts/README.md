@@ -23,16 +23,17 @@ Currently the following context documents are available:
   8. review: a more systematic, longer description of the book usually taking the form of a review with personal remarks. 
   9. keywords: keywords (optional) to be used if a position has some specific feature (e.g. is a mandatory reading or has won a prize)
 
+### The 'light' version approach
+
  Context:
  In the file [personal_reading_log_context_lite.jsonld](personal_reading_log_context_lite.jsonld) there is the first version of the context specified using the concepts / relations
  taken from the schema.org ontology. In addition, there is also a Polish version of the context file 
- ([personal_reading_log_context_lite_pl.jsonld](personal_reading_log_context_lite_pl.jsonld)). The definitions of the fields are the same so
- their meaning can be interpreted properly in both cases.
+ ([personal_reading_log_context_lite_pl.jsonld](personal_reading_log_context_lite_pl.jsonld)). The definitions of the fields are the same so their meaning can be interpreted properly in both cases.
 
- (This is a 'lite' version of the context which uses only well-known, well-established ontologies to describe fields' meaning. However, since those ontologies do not provide
-  the ideal means for my to express full semantics and/or structure, more complex versions will be presented which would also offer more functionality). 
+ This is a 'lite' version of the context which uses only well-known, well-established ontologies to describe fields' meaning. However, since these ontologies do not provide
+ the ideal means for my to express full semantics and/or structure, more complex versions are need to offer more functionality (ref. sections below). 
 
- The following schema.org terms are used: 
+ The following schema.org terms are used in the above context: 
 
  1. "http://schema.org/author": The author of this content or rating.
  2. "http://schema.org/name": The name given to the resource.
@@ -70,3 +71,69 @@ Good source for inspiration: https://www.w3.org/TR/vocab-dcat-2/ and https://www
 In addition, the @type might be used (e.g., as 'schema:Book') to define the type of the item in the database. In fact, sometimes it is not a book but a novella from a journal for instance
 so I think more work is needed to think it out. Maybe we should not think about it as 'books' but as some more abstract resource,
 perhaps http://purl.org/dc/terms/BibliographicResource or some element from https://www.w3.org/TR/vocab-dcat-2/ (or other ontology)
+
+**Examples of the JSON-LD data files**
+
+#### English version
+
+```
+{
+      "@id": "#11",
+      "@type": "schema:Book",
+      "author": "Michael Chabon",
+      "title": "Cudowni chłopcy",
+      "genre": "powieść",
+      "inLanguage": "Polski",
+      "bookFormat": "schema:Paperback",
+      "dateRead": "2009-09-05",
+      "comment": "Bardzo dobra",
+      "review": ""
+}
+```
+
+#### Polish version
+
+```
+{
+      "@id": "#11",
+      "@type": "schema:Book",
+      "autor": "Michael Chabon",
+      "tytuł": "Cudowni chłopcy",
+      "typ": "powieść",
+      "język": "Polski",
+      "medium": "schema:Paperback",
+      "data": "2009-09-05",
+      "komentarz": "Bardzo dobra",
+      "recenzja": ""
+}
+```
+
+### The 'full' version approach
+
+In this version of the context we still have nine fields with the meaning presented above, however for some fields we provide vocabulary which can be easily used by in the final documents.
+In addition to more precise vocabulary we introduce means for simplification of the JSON-LD file to make it look more like an ordinary JSON file. 
+Finally, we introduce the means to use the keywords (or, in fact, ontology terms) without prefixes in national languages so the final document might be get a pleasant national language form.
+
+The context file (for Polish) is here: [personal_reading_log_context_pl.jsonld](personal_reading_log_context_pl.jsonld).
+
+Example entry for Polish:
+
+```
+    {
+      "ID": "#11",
+      "szablon": "Książka",
+      "autor": "Michael Chabon",
+      "tytuł": "Cudowni chłopcy",
+      "typ": "Powieść",
+      "język": "Polski",
+      "medium": "Tekst",
+      "data": "2009-09-05",
+      "komentarz": "Bardzo dobra",
+      "recenzja": ""
+    }
+```
+
+The keyword values of 'typ' (such as "Powieść") and 'medium (such as 'Tekst') and also from 'szablon' (such as 'Książka') are now the vocabulary 
+from the ontology https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl so can be processed using semantic tools thus 
+gaining more value from the reading record base.
+
