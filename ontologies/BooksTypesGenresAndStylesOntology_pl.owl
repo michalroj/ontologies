@@ -35,67 +35,64 @@ My current goal is to introduce all necessary terms to be used by JSON-LD docume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.1</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#Audio"/>
+        <Class IRI="#Forma_mówiona"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Dzieło_literackie"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dzieło_literatury_faktu"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Dzieło_literatury_pięknej"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Esej"/>
+        <Class IRI="#Forma_pisana"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Forma_przekazu"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Gatunek_Esej"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gatunek_Metafikcja"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gatunek_Opowiadanie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gatunek_Poradnik"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gatunek_Powieść"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gatunek_Reportaż"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gatunek_Tekst_popularnonaukowy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gatunek_Tomik_wierszy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gatunek_Wiersz"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gatunek_Wywiad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gatunek_Zbiór_opowiadań"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gatunek_Zbiór_reportarzy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gatunek_literacki"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gatunek_literatury_faktu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gatunek_literatury_pięknej"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Książka"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Metafikcja"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Opowiadanie"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Poradnik"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Powieść"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Reportaż"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Szablon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tekst"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tekst_popularnonaukowy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Tomik_wierszy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wiersz"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Wywiad"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Zbiór_opowiadań"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Zbiór_reportarzy"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#medium"/>
@@ -103,74 +100,175 @@ My current goal is to introduce all necessary terms to be used by JSON-LD docume
     <Declaration>
         <ObjectProperty IRI="#typ"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Audio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Esej"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Metafikcja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Opowiadanie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Poradnik"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Powieść"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reportaż"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tekst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tekst_popularnonaukowy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tomik_wierszy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wiersz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wywiad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zbiór_opowiadań"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zbiór_reportarzy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
     <SubClassOf>
-        <Class IRI="#Audio"/>
+        <Class IRI="#Forma_mówiona"/>
         <Class IRI="#Forma_przekazu"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Dzieło_literatury_faktu"/>
-        <Class IRI="#Dzieło_literackie"/>
+        <Class IRI="#Forma_pisana"/>
+        <Class IRI="#Forma_przekazu"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Dzieło_literatury_pięknej"/>
-        <Class IRI="#Dzieło_literackie"/>
+        <Class IRI="#Gatunek_Esej"/>
+        <Class IRI="#Gatunek_literatury_faktu"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Esej"/>
-        <Class IRI="#Dzieło_literatury_faktu"/>
+        <Class IRI="#Gatunek_Metafikcja"/>
+        <Class IRI="#Gatunek_literatury_pięknej"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gatunek_Opowiadanie"/>
+        <Class IRI="#Gatunek_literatury_pięknej"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gatunek_Poradnik"/>
+        <Class IRI="#Gatunek_literatury_faktu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gatunek_Powieść"/>
+        <Class IRI="#Gatunek_literatury_pięknej"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gatunek_Reportaż"/>
+        <Class IRI="#Gatunek_literatury_faktu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gatunek_Tekst_popularnonaukowy"/>
+        <Class IRI="#Gatunek_literatury_faktu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gatunek_Tomik_wierszy"/>
+        <Class IRI="#Gatunek_literatury_pięknej"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gatunek_Wiersz"/>
+        <Class IRI="#Gatunek_literatury_pięknej"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gatunek_Wywiad"/>
+        <Class IRI="#Gatunek_literatury_faktu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gatunek_Zbiór_opowiadań"/>
+        <Class IRI="#Gatunek_literatury_pięknej"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gatunek_Zbiór_reportarzy"/>
+        <Class IRI="#Gatunek_literatury_faktu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gatunek_literatury_faktu"/>
+        <Class IRI="#Gatunek_literacki"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gatunek_literatury_pięknej"/>
+        <Class IRI="#Gatunek_literacki"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Książka"/>
         <Class IRI="#Szablon"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Metafikcja"/>
-        <Class IRI="#Dzieło_literatury_pięknej"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Opowiadanie"/>
-        <Class IRI="#Dzieło_literatury_pięknej"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Poradnik"/>
-        <Class IRI="#Dzieło_literatury_faktu"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Powieść"/>
-        <Class IRI="#Dzieło_literatury_pięknej"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Reportaż"/>
-        <Class IRI="#Dzieło_literatury_faktu"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tekst"/>
-        <Class IRI="#Forma_przekazu"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tekst_popularnonaukowy"/>
-        <Class IRI="#Dzieło_literatury_faktu"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tomik_wierszy"/>
-        <Class IRI="#Dzieło_literatury_pięknej"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Wiersz"/>
-        <Class IRI="#Dzieło_literatury_pięknej"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Wywiad"/>
-        <Class IRI="#Dzieło_literatury_faktu"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Zbiór_opowiadań"/>
-        <Class IRI="#Dzieło_literatury_pięknej"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Zbiór_reportarzy"/>
-        <Class IRI="#Dzieło_literatury_faktu"/>
-    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Forma_mówiona"/>
+        <NamedIndividual IRI="#Audio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gatunek_Esej"/>
+        <NamedIndividual IRI="#Esej"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gatunek_Metafikcja"/>
+        <NamedIndividual IRI="#Metafikcja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gatunek_Opowiadanie"/>
+        <NamedIndividual IRI="#Opowiadanie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gatunek_Poradnik"/>
+        <NamedIndividual IRI="#Poradnik"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gatunek_Powieść"/>
+        <NamedIndividual IRI="#Powieść"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gatunek_Reportaż"/>
+        <NamedIndividual IRI="#Reportaż"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Forma_pisana"/>
+        <NamedIndividual IRI="#Tekst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gatunek_Tekst_popularnonaukowy"/>
+        <NamedIndividual IRI="#Tekst_popularnonaukowy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gatunek_Tomik_wierszy"/>
+        <NamedIndividual IRI="#Tomik_wierszy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gatunek_Wiersz"/>
+        <NamedIndividual IRI="#Wiersz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gatunek_Wywiad"/>
+        <NamedIndividual IRI="#Wywiad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gatunek_Zbiór_opowiadań"/>
+        <NamedIndividual IRI="#Zbiór_opowiadań"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gatunek_Zbiór_reportarzy"/>
+        <NamedIndividual IRI="#Zbiór_reportarzy"/>
+    </ClassAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#medium"/>
         <Class IRI="#Książka"/>
@@ -185,7 +283,7 @@ My current goal is to introduce all necessary terms to be used by JSON-LD docume
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#typ"/>
-        <Class IRI="#Dzieło_literackie"/>
+        <Class IRI="#Gatunek_literacki"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
