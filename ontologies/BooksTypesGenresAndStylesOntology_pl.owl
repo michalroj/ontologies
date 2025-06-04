@@ -145,6 +145,13 @@ My current goal is to introduce all necessary terms to be used by JSON-LD docume
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
     </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="so:Book"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Książka"/>
+        <Class abbreviatedIRI="so:Book"/>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Forma_mówiona"/>
         <Class IRI="#Forma_przekazu"/>
