@@ -133,7 +133,7 @@ Example entry for Polish:
     }
 ```
 
-The keyword values of 'typ' (such as "Powieść") and 'medium (such as 'Tekst') and also from 'szablon' (such as 'Książka') are now the vocabulary 
-from the ontology https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl so can be processed using semantic tools thus 
+The values of 'typ' (such as "Powieść") and values of 'medium' (such as "Tekst") and also from 'szablon' (such as "Książka") are now the vocabulary 
+from the ontology https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl so they can be processed using semantic tools thus 
 gaining more value from the reading record base.
 
