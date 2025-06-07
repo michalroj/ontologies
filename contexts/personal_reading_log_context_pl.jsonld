@@ -1,6 +1,9 @@
 {
   "@context": {
     "@vocab": "https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
     "ID": "@id",
     "szablon": "@type",
     "objects": "@graph",
@@ -8,13 +11,12 @@
     "medium": {"@type": "@vocab"},
     "typ": {"@type": "@vocab"},
 
-    "schema": "http://schema.org/",
 
     "autor": "schema:author",
     "tytuł": "schema:name",
     "język": "schema:inLanguage",
 
-    "data": "schema:dateRead",
+    "data": { "@id": "schema:dateRead", "@type": "xsd:date" },
     "komentarz": "schema:comment",
     "recenzja": "schema:review",
     "słowa kluczowe": "schema:keywords"
