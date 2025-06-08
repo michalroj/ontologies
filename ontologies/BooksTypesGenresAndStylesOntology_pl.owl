@@ -1,318 +1,465 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#"
      xml:base="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:so="https://schema.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl">
-    <Prefix name="" IRI="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#"/>
-    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
-    <Prefix name="so" IRI="https://schema.org/"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-        <Literal>Michał Rój</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal xml:lang="en">This is an vocabulary of book types, genres and styles expressed in Polish terms. 
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl">
+        <dc:creator>Michał Rój</dc:creator>
+        <rdfs:comment xml:lang="en">This is an vocabulary of book types, genres and styles expressed in Polish terms. 
 Its main purpose is to serve as a vocabulary for  easy-to-use JSON-LD documents. 
 The main conceptual layer is indended to be imported from other, more developed and more popular ontologies, while the properties and concepts introduced here
-will be made &apos;equivalent&apos; or related in other ways to the base concepts.</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal xml:lang="en">This ontology is still a work-in-progress.
-My current goal is to introduce all necessary terms to be used by JSON-LD documents but their correct definitions will be the future task.</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.1</Literal>
-    </Annotation>
-    <Declaration>
-        <Class IRI="#Forma_mówiona"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Forma_pisana"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Forma_przekazu"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gatunek_Esej"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gatunek_Metafikcja"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gatunek_Opowiadanie"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gatunek_Poradnik"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gatunek_Powieść"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gatunek_Reportaż"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gatunek_Tekst_popularnonaukowy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gatunek_Tomik_wierszy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gatunek_Wiersz"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gatunek_Wywiad"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gatunek_Zbiór_opowiadań"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gatunek_Zbiór_reportarzy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gatunek_literacki"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gatunek_literatury_faktu"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gatunek_literatury_pięknej"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Książka"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Szablon"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#medium"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#typ"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Audio"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Esej"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Metafikcja"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Opowiadanie"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Poradnik"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Powieść"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Reportaż"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Tekst"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Tekst_popularnonaukowy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Tomik_wierszy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Wiersz"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Wywiad"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Zbiór_opowiadań"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Zbiór_reportarzy"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="so:Book"/>
-    </Declaration>
-    <EquivalentClasses>
-        <Class IRI="#Książka"/>
-        <Class abbreviatedIRI="so:Book"/>
-    </EquivalentClasses>
-    <SubClassOf>
-        <Class IRI="#Forma_mówiona"/>
-        <Class IRI="#Forma_przekazu"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Forma_pisana"/>
-        <Class IRI="#Forma_przekazu"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gatunek_Esej"/>
-        <Class IRI="#Gatunek_literatury_faktu"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gatunek_Metafikcja"/>
-        <Class IRI="#Gatunek_literatury_pięknej"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gatunek_Opowiadanie"/>
-        <Class IRI="#Gatunek_literatury_pięknej"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gatunek_Poradnik"/>
-        <Class IRI="#Gatunek_literatury_faktu"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gatunek_Powieść"/>
-        <Class IRI="#Gatunek_literatury_pięknej"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gatunek_Reportaż"/>
-        <Class IRI="#Gatunek_literatury_faktu"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gatunek_Tekst_popularnonaukowy"/>
-        <Class IRI="#Gatunek_literatury_faktu"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gatunek_Tomik_wierszy"/>
-        <Class IRI="#Gatunek_literatury_pięknej"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gatunek_Wiersz"/>
-        <Class IRI="#Gatunek_literatury_pięknej"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gatunek_Wywiad"/>
-        <Class IRI="#Gatunek_literatury_faktu"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gatunek_Zbiór_opowiadań"/>
-        <Class IRI="#Gatunek_literatury_pięknej"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gatunek_Zbiór_reportarzy"/>
-        <Class IRI="#Gatunek_literatury_faktu"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gatunek_literatury_faktu"/>
-        <Class IRI="#Gatunek_literacki"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Gatunek_literatury_pięknej"/>
-        <Class IRI="#Gatunek_literacki"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Książka"/>
-        <Class IRI="#Szablon"/>
-    </SubClassOf>
-    <ClassAssertion>
-        <Class IRI="#Forma_mówiona"/>
-        <NamedIndividual IRI="#Audio"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Gatunek_Esej"/>
-        <NamedIndividual IRI="#Esej"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Gatunek_Metafikcja"/>
-        <NamedIndividual IRI="#Metafikcja"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Gatunek_Opowiadanie"/>
-        <NamedIndividual IRI="#Opowiadanie"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Gatunek_Poradnik"/>
-        <NamedIndividual IRI="#Poradnik"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Gatunek_Powieść"/>
-        <NamedIndividual IRI="#Powieść"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Gatunek_Reportaż"/>
-        <NamedIndividual IRI="#Reportaż"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Forma_pisana"/>
-        <NamedIndividual IRI="#Tekst"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Gatunek_Tekst_popularnonaukowy"/>
-        <NamedIndividual IRI="#Tekst_popularnonaukowy"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Gatunek_Tomik_wierszy"/>
-        <NamedIndividual IRI="#Tomik_wierszy"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Gatunek_Wiersz"/>
-        <NamedIndividual IRI="#Wiersz"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Gatunek_Wywiad"/>
-        <NamedIndividual IRI="#Wywiad"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Gatunek_Zbiór_opowiadań"/>
-        <NamedIndividual IRI="#Zbiór_opowiadań"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Gatunek_Zbiór_reportarzy"/>
-        <NamedIndividual IRI="#Zbiór_reportarzy"/>
-    </ClassAssertion>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#medium"/>
-        <Class IRI="#Książka"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#typ"/>
-        <Class IRI="#Książka"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#medium"/>
-        <Class IRI="#Forma_przekazu"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#typ"/>
-        <Class IRI="#Gatunek_literacki"/>
-    </ObjectPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#medium</IRI>
-        <Literal xml:lang="en">The physical medium of the book (e.g. audio, text)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#medium</IRI>
-        <Literal>medium</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#typ</IRI>
-        <Literal xml:lang="en">The literary genre of the creative work</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#typ</IRI>
-        <Literal>typ dzieła</Literal>
-    </AnnotationAssertion>
-</Ontology>
+will be made &apos;equivalent&apos; or related in other ways to the base concepts.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This ontology is still a work-in-progress.
+My current goal is to introduce all necessary terms to be used by JSON-LD documents but their correct definitions will be the future task.</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#medium -->
+
+    <owl:ObjectProperty rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#medium">
+        <rdfs:domain rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Książka"/>
+        <rdfs:range rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Forma_przekazu"/>
+        <rdfs:comment xml:lang="en">The physical medium of the book (e.g. audio, text)</rdfs:comment>
+        <rdfs:label>medium</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#typ -->
+
+    <owl:ObjectProperty rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#typ">
+        <rdfs:domain rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Książka"/>
+        <rdfs:range rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literacki"/>
+        <rdfs:comment xml:lang="en">The literary genre of the creative work</rdfs:comment>
+        <rdfs:label>typ dzieła</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Forma_mówiona -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Forma_mówiona">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Forma_przekazu"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Forma_pisana -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Forma_pisana">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Forma_przekazu"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Forma_przekazu -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Forma_przekazu"/>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Biografia -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Biografia">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_faktu"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Esej -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Esej">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_faktu"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Komiks -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Komiks">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_pięknej"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Metafikcja -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Metafikcja">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_pięknej"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Opowiadanie -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Opowiadanie">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_pięknej"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Podręcznik -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Podręcznik">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_faktu"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Poradnik -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Poradnik">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_faktu"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Powieść -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Powieść">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_pięknej"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Reportaż -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Reportaż">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_faktu"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Tekst_popularnonaukowy -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Tekst_popularnonaukowy">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_faktu"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Tomik_wierszy -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Tomik_wierszy">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_pięknej"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Wiersz -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Wiersz">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_pięknej"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Wywiad -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Wywiad">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_faktu"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Zbiór_esejów -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Zbiór_esejów">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_faktu"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Zbiór_felietonów -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Zbiór_felietonów">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_faktu"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Zbiór_opowiadań -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Zbiór_opowiadań">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_pięknej"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Zbiór_reportaży -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Zbiór_reportaży">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_faktu"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Zbiór_wywiadów -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Zbiór_wywiadów">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_faktu"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literacki -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literacki"/>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_faktu -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_faktu">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literacki"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_pięknej -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literatury_pięknej">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_literacki"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Książka -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Książka">
+        <owl:equivalentClass rdf:resource="https://schema.org/Book"/>
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Szablon"/>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Szablon -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Szablon"/>
+    
+
+
+    <!-- https://schema.org/Book -->
+
+    <owl:Class rdf:about="https://schema.org/Book"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Audio -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Audio">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Forma_mówiona"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Biografia -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Biografia">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Biografia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Esej -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Esej">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Esej"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Komiks -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Komiks">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Komiks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Metafikcja -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Metafikcja">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Metafikcja"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Opowiadanie -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Opowiadanie">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Opowiadanie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Podręcznik -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Podręcznik">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Podręcznik"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Poradnik -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Poradnik">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Poradnik"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Powieść -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Powieść">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Powieść"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Reportaż -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Reportaż">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Reportaż"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Tekst -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Tekst">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Forma_pisana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Tekst_popularnonaukowy -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Tekst_popularnonaukowy">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Tekst_popularnonaukowy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Tomik_wierszy -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Tomik_wierszy">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Tomik_wierszy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Wiersz -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Wiersz">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Wiersz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Wywiad -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Wywiad">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Wywiad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_esejów -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_esejów">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Zbiór_esejów"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_felietonów -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_felietonów">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Zbiór_felietonów"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_opowiadań -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_opowiadań">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Zbiór_opowiadań"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_reportaży -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_reportaży">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Zbiór_reportaży"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_wywiadów -->
+
+    <owl:NamedIndividual rdf:about="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_wywiadów">
+        <rdf:type rdf:resource="https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Gatunek_Zbiór_wywiadów"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
 
 
 
