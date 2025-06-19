@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "@vocab": "https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology.owl#",
+    "schema": "http://schema.org/",
+
+    "ID": "@id",
+    "template": "@type", 
+    "objects": "@graph",
+
+    "bookFormat": {"@type": "@vocab"},
+    "genre": {"@type": "@vocab"},
+
+    "author": "schema:author",
+    "title": "schema:name",
+    "inLanguage": "schema:inLanguage",
+
+    "dateRead": "schema:dateRead",
+    "comment": "schema:comment",
+    "review": "schema:review",
+    "keywords": "schema:keywords"
+  }
+}

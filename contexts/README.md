@@ -110,11 +110,50 @@ perhaps http://purl.org/dc/terms/BibliographicResource or some element from http
 
 ### The 'full' version approach
 
+
 In this version of the context we still have nine fields with the meaning presented above, however for some fields we provide vocabulary which can be easily used by in the final documents.
 In addition to more precise vocabulary we introduce means for simplification of the JSON-LD file to make it look more like an ordinary JSON file. 
 Finally, we introduce the means to use the keywords (or, in fact, ontology terms) without prefixes in national languages so the final document might be get a pleasant national language form.
 
 The context file (for Polish) is here: [personal_reading_log_context_pl.jsonld](personal_reading_log_context_pl.jsonld).
+
+Example entry for Polish:
+
+```
+    {
+      "ID": "#11",
+      "typ": "Powieść",
+      "autor": "Michael Chabon",
+      "tytuł": "Cudowni chłopcy",
+      "język": "Polski",
+      "data": "2009-09-05",
+      "komentarz": "Bardzo dobra",
+      "recenzja": ""
+    }
+```
+
+The values of 'typ' (such as "Powieść") are now the vocabulary from the ontology 
+[https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.owl](https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.owl) 
+so they can be processed using semantic tools thus gaining more value comparing to a the 'lite' approach.
+
+In addition, there is an 'Audiobook' class defined in the ontology so is someone needs to express that the read book variant was in audio form, he can express it as follows:
+
+```
+    {
+      "ID": "#11",
+      "typ": [ "Powieść", "Audiobook" ]
+      "autor": "Michael Chabon",
+      "tytuł": "Cudowni chłopcy",
+      "język": "Polski",
+      "data": "2009-09-05",
+      "komentarz": "Bardzo dobra",
+      "recenzja": ""
+    }
+```
+
+#### For reference, the version 1 context (will be removed)
+
+The context file (for Polish) is here: [personal_reading_log_context_v1_pl.jsonld](personal_reading_log_context_v1_pl.jsonld).
 
 Example entry for Polish:
 
@@ -133,7 +172,6 @@ Example entry for Polish:
     }
 ```
 
-The values of 'typ' (such as "Powieść") and values of 'medium' (such as "Tekst") and also from 'szablon' (such as "Książka") are now the vocabulary 
-from the ontology https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl so they can be processed using semantic tools thus 
+The values of 'typ' (such as "Powieść") and values of 'medium' (such as "Tekst") and also from 'szablon' (such as "Książka") are now the vocabulary
+from the ontology https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl so they can be processed using semantic tools thus
 gaining more value from the reading record base.
-
