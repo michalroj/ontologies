@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "@vocab": "https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "id": "@id",
+    "type": "@type",
+    "objects": "@graph",
+
+    "autor": "schema:author",
+    "tytuł": "schema:name",
+    "język": "schema:inLanguage",
+
+    "data": { "@id": "schema:dateRead", "@type": "xsd:date" },
+    "komentarz": "schema:comment",
+    "recenzja": "schema:review",
+    "słowa kluczowe": "schema:keywords"
+  }
+}
