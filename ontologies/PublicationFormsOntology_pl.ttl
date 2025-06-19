@@ -11,10 +11,26 @@
 <https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl> rdf:type owl:Ontology ;
                                                                                      owl:versionIRI <https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl/0.3> ;
                                                                                      dc:creator "Michał Rój" ;
-                                                                                     rdfs:comment """This is an vocabulary of publication forms. 
+                                                                                     rdfs:comment """Oto ontologia form publikacji dzieł literackich.
+
+Stworzona w celu wykorzystania np. w listach przeczytanych książek i wskazania z jakim rodzajem dzieła czy formą dzieła mamy do czynienia. 
+Ponieważ dziełem, który możemy chcieć odnotować, bywa i jeden wiersz (z większego zbioru) i cały zbiór (tomik) wierszy, jedno opowiadanie i zbiór opowiadań, powieść i antologia, ontologia ta definiuje pojęcia, które odpowiadają wszystkim wymienionym wyżej formom - bez potrzeby budowania bardziej złożonych tworów formalno-logicznych.
+
+Nietypową cechą tej ontologii jest to, że pojęcia (klasy) są nazwane po polsku (zwykłą
+praktyką jest - jeśli nie korzysta się z bardzo systematycznego podejścia w stylu OBO - nazywanie klas w języku Szekspira i ew. dodawania etykiet językowych).
+
+Wynika to z tego, że obiekty (nazwy klas) mają być w założeniu wykorzystane w plikach
+JSON-LD używanych przez polskiego czytelnika, z polskimi komentarzami.
+
+Ontologia ta ma mieć docelowo siostrzaną ontologię z pojęciami wyrażonymi w jęz. angielskim oraz będzie wzbogacona o odniesienia do innych, szerzej używanych ontologii i pojęć."""@pl ,
+                                                                                                  """This is an vocabulary of publication forms. 
+
 Its main purpose is to serve as a vocabulary for easy-to-use JSON-LD documents. 
-The main conceptual layer is indended to be imported from other, more developed and more popular ontologies, while the properties and concepts introduced here
-will be made 'equivalent' or related in other ways to the base concepts."""@en ,
+
+The ontology concepts have Polish names since the concepts are indended to 
+be used in Polish versions of book-related files.
+
+Most concepts from this ontology are planned to be imported from other, more developed and more popular ontologies, while the properties and concepts introduced here will be made 'equivalent' or related in other ways to the base concepts."""@en ,
                                                                                                   """This ontology is still a work-in-progress.
 The current goal is to introduce all necessary terms to be used by JSON-LD documents but their correct definitions will be the future task."""@en ;
                                                                                      owl:versionInfo 0.3 .
@@ -28,158 +44,140 @@ dc:creator rdf:type owl:AnnotationProperty .
 
 
 #################################################################
-#    Object Properties
-#################################################################
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#medium
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#medium> rdf:type owl:ObjectProperty ;
-                                                                                                    rdfs:range <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_wyrażone_w_formie> ;
-                                                                                                    rdfs:comment "The physical medium of the book (e.g. audio, text)"@en ;
-                                                                                                    rdfs:label "medium" .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#typ
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#typ> rdf:type owl:ObjectProperty ;
-                                                                                                 rdfs:range <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło> ;
-                                                                                                 rdfs:comment "The literary genre of the creative work"@en ;
-                                                                                                 rdfs:label "typ dzieła" .
-
-
-#################################################################
 #    Classes
 #################################################################
 
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Biografia
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Biografia> rdf:type owl:Class ;
-                                                                                                       rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_faktu> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło> rdf:type owl:Class .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_faktu
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_faktu> rdf:type owl:Class ;
-                                                                                                                     rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_pięknej
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_pięknej> rdf:type owl:Class ;
-                                                                                                                       rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_wyrażone_w_formie
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_wyrażone_w_formie> rdf:type owl:Class .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_wyrażone_w_formie_mówionej
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_wyrażone_w_formie_mówionej> rdf:type owl:Class ;
-                                                                                                                               rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_wyrażone_w_formie> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_wyrażone_w_formie_pisanej
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_wyrażone_w_formie_pisanej> rdf:type owl:Class ;
-                                                                                                                              rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_wyrażone_w_formie> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Esej
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Esej> rdf:type owl:Class ;
-                                                                                                  rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_faktu> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Komiks
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Komiks> rdf:type owl:Class ;
-                                                                                                    rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_pięknej> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Metafikcja
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Metafikcja> rdf:type owl:Class ;
-                                                                                                        rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_pięknej> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Opowiadanie
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Opowiadanie> rdf:type owl:Class ;
-                                                                                                         rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_pięknej> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Podręcznik
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Podręcznik> rdf:type owl:Class ;
-                                                                                                        rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_faktu> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Poradnik
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Poradnik> rdf:type owl:Class ;
-                                                                                                      rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_faktu> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Powieść
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Powieść> rdf:type owl:Class ;
-                                                                                                     rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_pięknej> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Praca_popularnonaukowa
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Praca_popularnonaukowa> rdf:type owl:Class ;
-                                                                                                                    rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_faktu> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Reportaż
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Reportaż> rdf:type owl:Class ;
-                                                                                                      rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_faktu> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Tomik_wierszy
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Tomik_wierszy> rdf:type owl:Class ;
-                                                                                                           rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_pięknej> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Wiersz
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Wiersz> rdf:type owl:Class ;
-                                                                                                    rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_pięknej> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Wywiad
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Wywiad> rdf:type owl:Class ;
-                                                                                                    rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_faktu> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_esejów
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_esejów> rdf:type owl:Class ;
-                                                                                                          rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_faktu> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_felietonów
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_felietonów> rdf:type owl:Class ;
-                                                                                                              rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_faktu> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_opowiadań
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_opowiadań> rdf:type owl:Class ;
-                                                                                                             rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_pięknej> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_reportaży
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_reportaży> rdf:type owl:Class ;
-                                                                                                             rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_faktu> .
-
-
-###  https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_wywiadów
-<https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Zbiór_wywiadów> rdf:type owl:Class ;
-                                                                                                            rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_literatury_faktu> .
-
-
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Audiobook
 :Audiobook rdf:type owl:Class ;
-           rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_wyrażone_w_formie_mówionej> .
+           rdfs:subClassOf :Dzieło_wyrażone_w_formie_mówionej .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Autobiografia
 :Autobiografia rdf:type owl:Class ;
-               rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Biografia> .
+               rdfs:subClassOf :Biografia .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Biografia
+:Biografia rdf:type owl:Class ;
+           rdfs:subClassOf :Dzieło_literatury_faktu .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło
+:Dzieło rdf:type owl:Class .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_faktu
+:Dzieło_literatury_faktu rdf:type owl:Class ;
+                         rdfs:subClassOf :Dzieło .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_pięknej
+:Dzieło_literatury_pięknej rdf:type owl:Class ;
+                           rdfs:subClassOf :Dzieło .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_wyrażone_w_formie
+:Dzieło_wyrażone_w_formie rdf:type owl:Class .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_wyrażone_w_formie_mówionej
+:Dzieło_wyrażone_w_formie_mówionej rdf:type owl:Class ;
+                                   rdfs:subClassOf :Dzieło_wyrażone_w_formie .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_wyrażone_w_formie_pisanej
+:Dzieło_wyrażone_w_formie_pisanej rdf:type owl:Class ;
+                                  rdfs:subClassOf :Dzieło_wyrażone_w_formie .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Esej
+:Esej rdf:type owl:Class ;
+      rdfs:subClassOf :Dzieło_literatury_faktu .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Komiks
+:Komiks rdf:type owl:Class ;
+        rdfs:subClassOf :Dzieło_literatury_pięknej .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Metafikcja
+:Metafikcja rdf:type owl:Class ;
+            rdfs:subClassOf :Dzieło_literatury_pięknej .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Opowiadanie
+:Opowiadanie rdf:type owl:Class ;
+             rdfs:subClassOf :Dzieło_literatury_pięknej .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Podręcznik
+:Podręcznik rdf:type owl:Class ;
+            rdfs:subClassOf :Dzieło_literatury_faktu .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Poradnik
+:Poradnik rdf:type owl:Class ;
+          rdfs:subClassOf :Dzieło_literatury_faktu .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Powieść
+:Powieść rdf:type owl:Class ;
+         rdfs:subClassOf :Dzieło_literatury_pięknej .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Praca_popularnonaukowa
+:Praca_popularnonaukowa rdf:type owl:Class ;
+                        rdfs:subClassOf :Dzieło_literatury_faktu .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Reportaż
+:Reportaż rdf:type owl:Class ;
+          rdfs:subClassOf :Dzieło_literatury_faktu .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Tekst
 :Tekst rdf:type owl:Class ;
-       rdfs:subClassOf <https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology_pl.owl#Dzieło_wyrażone_w_formie_pisanej> .
+       rdfs:subClassOf :Dzieło_wyrażone_w_formie_pisanej .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Tomik_wierszy
+:Tomik_wierszy rdf:type owl:Class ;
+               rdfs:subClassOf :Dzieło_literatury_pięknej .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Wiersz
+:Wiersz rdf:type owl:Class ;
+        rdfs:subClassOf :Dzieło_literatury_pięknej .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Wywiad
+:Wywiad rdf:type owl:Class ;
+        rdfs:subClassOf :Dzieło_literatury_faktu .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Zbiór_esejów
+:Zbiór_esejów rdf:type owl:Class ;
+              rdfs:subClassOf :Dzieło_literatury_faktu .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Zbiór_felietonów
+:Zbiór_felietonów rdf:type owl:Class ;
+                  rdfs:subClassOf :Dzieło_literatury_faktu .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Zbiór_opowiadań
+:Zbiór_opowiadań rdf:type owl:Class ;
+                 rdfs:subClassOf :Dzieło_literatury_pięknej .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Zbiór_reportaży
+:Zbiór_reportaży rdf:type owl:Class ;
+                 rdfs:subClassOf :Dzieło_literatury_faktu .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Zbiór_wywiadów
+:Zbiór_wywiadów rdf:type owl:Class ;
+                rdfs:subClassOf :Dzieło_literatury_faktu .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
