@@ -49,135 +49,189 @@ dc:creator rdf:type owl:AnnotationProperty .
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Audiobook
 :Audiobook rdf:type owl:Class ;
-           rdfs:subClassOf :Dzieło_wyrażone_w_formie_mówionej .
+           rdfs:subClassOf :Dzieło_wyrażone_w_formie_mówionej ;
+           rdfs:label "Audiobook"@en ,
+                      "Audiobook"@pl .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Autobiografia
 :Autobiografia rdf:type owl:Class ;
-               rdfs:subClassOf :Biografia .
+               rdfs:subClassOf :Biografia ;
+               rdfs:label "Autobiografia"@pl ,
+                          "Autobiography"@en .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Biografia
 :Biografia rdf:type owl:Class ;
-           rdfs:subClassOf :Dzieło_literatury_faktu .
+           rdfs:subClassOf :Dzieło_literatury_faktu ;
+           rdfs:label "Biografia"@pl ,
+                      "Biography"@en .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło
-:Dzieło rdf:type owl:Class .
+:Dzieło rdf:type owl:Class ;
+        rdfs:label "Dzieło"@pl ,
+                   "Work"@en .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_faktu
 :Dzieło_literatury_faktu rdf:type owl:Class ;
-                         rdfs:subClassOf :Dzieło .
+                         rdfs:subClassOf :Dzieło ;
+                         rdfs:label "Dzieło literatury faktu"@pl ,
+                                    "Non-fiction work"@en .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_pięknej
 :Dzieło_literatury_pięknej rdf:type owl:Class ;
-                           rdfs:subClassOf :Dzieło .
+                           rdfs:subClassOf :Dzieło ;
+                           rdfs:label "Dzieło literatury pięknej"@pl ,
+                                      "Fiction work"@en .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_wyrażone_w_formie
-:Dzieło_wyrażone_w_formie rdf:type owl:Class .
+:Dzieło_wyrażone_w_formie rdf:type owl:Class ;
+                          rdfs:label "Dzieło wyrażone w formie"@pl ,
+                                     "Work expressed in the form of"@en .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_wyrażone_w_formie_mówionej
 :Dzieło_wyrażone_w_formie_mówionej rdf:type owl:Class ;
-                                   rdfs:subClassOf :Dzieło_wyrażone_w_formie .
+                                   rdfs:subClassOf :Dzieło_wyrażone_w_formie ;
+                                   rdfs:label "Dzieło wyrażone w formie mówionej"@pl ,
+                                              "Work expressed in spoken form"@en .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_wyrażone_w_formie_pisanej
 :Dzieło_wyrażone_w_formie_pisanej rdf:type owl:Class ;
-                                  rdfs:subClassOf :Dzieło_wyrażone_w_formie .
+                                  rdfs:subClassOf :Dzieło_wyrażone_w_formie ;
+                                  rdfs:label "Dzieło wyrażone w formie pisanej"@pl ,
+                                             "Work expressed in written form"@en .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Esej
 :Esej rdf:type owl:Class ;
-      rdfs:subClassOf :Dzieło_literatury_faktu .
+      rdfs:subClassOf :Dzieło_literatury_faktu ;
+      rdfs:label "Esej"@pl ,
+                 "Essay"@en .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Komiks
 :Komiks rdf:type owl:Class ;
-        rdfs:subClassOf :Dzieło_literatury_pięknej .
+        rdfs:subClassOf :Dzieło_literatury_pięknej ;
+        rdfs:label "Comic"@en ,
+                   "Komiks"@pl .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Metafikcja
 :Metafikcja rdf:type owl:Class ;
-            rdfs:subClassOf :Dzieło_literatury_pięknej .
+            rdfs:subClassOf :Dzieło_literatury_pięknej ;
+            rdfs:label "Metafiction"@en ,
+                       "Metafikcja"@pl .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Opowiadanie
 :Opowiadanie rdf:type owl:Class ;
-             rdfs:subClassOf :Dzieło_literatury_pięknej .
+             rdfs:subClassOf :Dzieło_literatury_pięknej ;
+             rdfs:label "Opowiadanie"@pl ,
+                        "Short story"@en .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Podręcznik
 :Podręcznik rdf:type owl:Class ;
-            rdfs:subClassOf :Dzieło_literatury_faktu .
+            rdfs:subClassOf :Dzieło_literatury_faktu ;
+            rdfs:label "Podręcznik"@pl ,
+                       "Textbook"@en .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Poradnik
 :Poradnik rdf:type owl:Class ;
-          rdfs:subClassOf :Dzieło_literatury_faktu .
+          rdfs:subClassOf :Dzieło_literatury_faktu ;
+          rdfs:label "Guidebook"@en ,
+                     "Poradnik"@pl .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Powieść
 :Powieść rdf:type owl:Class ;
-         rdfs:subClassOf :Dzieło_literatury_pięknej .
+         rdfs:subClassOf :Dzieło_literatury_pięknej ;
+         rdfs:label "Novel"@en ,
+                    "Powieść"@pl .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Praca_popularnonaukowa
 :Praca_popularnonaukowa rdf:type owl:Class ;
-                        rdfs:subClassOf :Dzieło_literatury_faktu .
+                        rdfs:subClassOf :Dzieło_literatury_faktu ;
+                        rdfs:label "Popular science work"@en ,
+                                   "Praca popularnonaukowa"@pl .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Reportaż
 :Reportaż rdf:type owl:Class ;
-          rdfs:subClassOf :Dzieło_literatury_faktu .
+          rdfs:subClassOf :Dzieło_literatury_faktu ;
+          rdfs:label "Reportage"@en ,
+                     "Reportaż"@pl .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Tekst
 :Tekst rdf:type owl:Class ;
-       rdfs:subClassOf :Dzieło_wyrażone_w_formie_pisanej .
+       rdfs:subClassOf :Dzieło_wyrażone_w_formie_pisanej ;
+       rdfs:label "Tekst"@pl ,
+                  "Text"@en .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Tomik_wierszy
 :Tomik_wierszy rdf:type owl:Class ;
-               rdfs:subClassOf :Dzieło_literatury_pięknej .
+               rdfs:subClassOf :Dzieło_literatury_pięknej ;
+               rdfs:label "Poetry collection"@en ,
+                          "Tomik wierszy"@pl .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Wiersz
 :Wiersz rdf:type owl:Class ;
-        rdfs:subClassOf :Dzieło_literatury_pięknej .
+        rdfs:subClassOf :Dzieło_literatury_pięknej ;
+        rdfs:label "Poem"@en ,
+                   "Wiersz"@pl .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Wywiad
 :Wywiad rdf:type owl:Class ;
-        rdfs:subClassOf :Dzieło_literatury_faktu .
+        rdfs:subClassOf :Dzieło_literatury_faktu ;
+        rdfs:label "Interview"@en ,
+                   "Wywiad"@pl .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Zbiór_esejów
 :Zbiór_esejów rdf:type owl:Class ;
-              rdfs:subClassOf :Dzieło_literatury_faktu .
+              rdfs:subClassOf :Dzieło_literatury_faktu ;
+              rdfs:label "Collection of essays"@en ,
+                         "Zbiór esejów"@pl .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Zbiór_felietonów
 :Zbiór_felietonów rdf:type owl:Class ;
-                  rdfs:subClassOf :Dzieło_literatury_faktu .
+                  rdfs:subClassOf :Dzieło_literatury_faktu ;
+                  rdfs:label "Collection of columns"@en ,
+                             "Zbiór felietonów"@pl .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Zbiór_opowiadań
 :Zbiór_opowiadań rdf:type owl:Class ;
-                 rdfs:subClassOf :Dzieło_literatury_pięknej .
+                 rdfs:subClassOf :Dzieło_literatury_pięknej ;
+                 rdfs:label "Collection of short stories"@en ,
+                            "Zbiór opowiadań"@pl .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Zbiór_reportaży
 :Zbiór_reportaży rdf:type owl:Class ;
-                 rdfs:subClassOf :Dzieło_literatury_faktu .
+                 rdfs:subClassOf :Dzieło_literatury_faktu ;
+                 rdfs:label "Collection of reportages"@en ,
+                            "Zbiór reportaży"@pl .
 
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Zbiór_wywiadów
 :Zbiór_wywiadów rdf:type owl:Class ;
-                rdfs:subClassOf :Dzieło_literatury_faktu .
+                rdfs:subClassOf :Dzieło_literatury_faktu ;
+                rdfs:label "Collection of interviews"@en ,
+                           "Zbiór wywiadów"@pl .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

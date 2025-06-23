@@ -70,6 +70,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Audiobook">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_wyrażone_w_formie_mówionej"/>
+        <rdfs:label xml:lang="en">Audiobook</rdfs:label>
+        <rdfs:label xml:lang="pl">Audiobook</rdfs:label>
     </owl:Class>
     
 
@@ -78,6 +80,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Autobiografia">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Biografia"/>
+        <rdfs:label xml:lang="pl">Autobiografia</rdfs:label>
+        <rdfs:label xml:lang="en">Autobiography</rdfs:label>
     </owl:Class>
     
 
@@ -86,13 +90,18 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Biografia">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_faktu"/>
+        <rdfs:label xml:lang="pl">Biografia</rdfs:label>
+        <rdfs:label xml:lang="en">Biography</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło -->
 
-    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło"/>
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło">
+        <rdfs:label xml:lang="pl">Dzieło</rdfs:label>
+        <rdfs:label xml:lang="en">Work</rdfs:label>
+    </owl:Class>
     
 
 
@@ -100,6 +109,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_faktu">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło"/>
+        <rdfs:label xml:lang="pl">Dzieło literatury faktu</rdfs:label>
+        <rdfs:label xml:lang="en">Non-fiction work</rdfs:label>
     </owl:Class>
     
 
@@ -108,13 +119,18 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_pięknej">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło"/>
+        <rdfs:label xml:lang="pl">Dzieło literatury pięknej</rdfs:label>
+        <rdfs:label xml:lang="en">Fiction work</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_wyrażone_w_formie -->
 
-    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_wyrażone_w_formie"/>
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_wyrażone_w_formie">
+        <rdfs:label xml:lang="pl">Dzieło wyrażone w formie</rdfs:label>
+        <rdfs:label xml:lang="en">Work expressed in the form of</rdfs:label>
+    </owl:Class>
     
 
 
@@ -122,6 +138,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_wyrażone_w_formie_mówionej">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_wyrażone_w_formie"/>
+        <rdfs:label xml:lang="pl">Dzieło wyrażone w formie mówionej</rdfs:label>
+        <rdfs:label xml:lang="en">Work expressed in spoken form</rdfs:label>
     </owl:Class>
     
 
@@ -130,6 +148,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_wyrażone_w_formie_pisanej">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_wyrażone_w_formie"/>
+        <rdfs:label xml:lang="pl">Dzieło wyrażone w formie pisanej</rdfs:label>
+        <rdfs:label xml:lang="en">Work expressed in written form</rdfs:label>
     </owl:Class>
     
 
@@ -138,6 +158,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Esej">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_faktu"/>
+        <rdfs:label xml:lang="pl">Esej</rdfs:label>
+        <rdfs:label xml:lang="en">Essay</rdfs:label>
     </owl:Class>
     
 
@@ -146,6 +168,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Komiks">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_pięknej"/>
+        <rdfs:label xml:lang="en">Comic</rdfs:label>
+        <rdfs:label xml:lang="pl">Komiks</rdfs:label>
     </owl:Class>
     
 
@@ -154,6 +178,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Metafikcja">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_pięknej"/>
+        <rdfs:label xml:lang="en">Metafiction</rdfs:label>
+        <rdfs:label xml:lang="pl">Metafikcja</rdfs:label>
     </owl:Class>
     
 
@@ -162,6 +188,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Opowiadanie">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_pięknej"/>
+        <rdfs:label xml:lang="pl">Opowiadanie</rdfs:label>
+        <rdfs:label xml:lang="en">Short story</rdfs:label>
     </owl:Class>
     
 
@@ -170,6 +198,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Podręcznik">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_faktu"/>
+        <rdfs:label xml:lang="pl">Podręcznik</rdfs:label>
+        <rdfs:label xml:lang="en">Textbook</rdfs:label>
     </owl:Class>
     
 
@@ -178,6 +208,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Poradnik">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_faktu"/>
+        <rdfs:label xml:lang="en">Guidebook</rdfs:label>
+        <rdfs:label xml:lang="pl">Poradnik</rdfs:label>
     </owl:Class>
     
 
@@ -186,6 +218,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Powieść">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_pięknej"/>
+        <rdfs:label xml:lang="en">Novel</rdfs:label>
+        <rdfs:label xml:lang="pl">Powieść</rdfs:label>
     </owl:Class>
     
 
@@ -194,6 +228,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Praca_popularnonaukowa">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_faktu"/>
+        <rdfs:label xml:lang="en">Popular science work</rdfs:label>
+        <rdfs:label xml:lang="pl">Praca popularnonaukowa</rdfs:label>
     </owl:Class>
     
 
@@ -202,6 +238,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Reportaż">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_faktu"/>
+        <rdfs:label xml:lang="en">Reportage</rdfs:label>
+        <rdfs:label xml:lang="pl">Reportaż</rdfs:label>
     </owl:Class>
     
 
@@ -210,6 +248,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Tekst">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_wyrażone_w_formie_pisanej"/>
+        <rdfs:label xml:lang="pl">Tekst</rdfs:label>
+        <rdfs:label xml:lang="en">Text</rdfs:label>
     </owl:Class>
     
 
@@ -218,6 +258,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Tomik_wierszy">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_pięknej"/>
+        <rdfs:label xml:lang="en">Poetry collection</rdfs:label>
+        <rdfs:label xml:lang="pl">Tomik wierszy</rdfs:label>
     </owl:Class>
     
 
@@ -226,6 +268,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Wiersz">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_pięknej"/>
+        <rdfs:label xml:lang="en">Poem</rdfs:label>
+        <rdfs:label xml:lang="pl">Wiersz</rdfs:label>
     </owl:Class>
     
 
@@ -234,6 +278,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Wywiad">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_faktu"/>
+        <rdfs:label xml:lang="en">Interview</rdfs:label>
+        <rdfs:label xml:lang="pl">Wywiad</rdfs:label>
     </owl:Class>
     
 
@@ -242,6 +288,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Zbiór_esejów">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_faktu"/>
+        <rdfs:label xml:lang="en">Collection of essays</rdfs:label>
+        <rdfs:label xml:lang="pl">Zbiór esejów</rdfs:label>
     </owl:Class>
     
 
@@ -250,6 +298,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Zbiór_felietonów">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_faktu"/>
+        <rdfs:label xml:lang="en">Collection of columns</rdfs:label>
+        <rdfs:label xml:lang="pl">Zbiór felietonów</rdfs:label>
     </owl:Class>
     
 
@@ -258,6 +308,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Zbiór_opowiadań">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_pięknej"/>
+        <rdfs:label xml:lang="en">Collection of short stories</rdfs:label>
+        <rdfs:label xml:lang="pl">Zbiór opowiadań</rdfs:label>
     </owl:Class>
     
 
@@ -266,6 +318,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Zbiór_reportaży">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_faktu"/>
+        <rdfs:label xml:lang="en">Collection of reportages</rdfs:label>
+        <rdfs:label xml:lang="pl">Zbiór reportaży</rdfs:label>
     </owl:Class>
     
 
@@ -274,6 +328,8 @@ The current goal is to introduce all necessary terms to be used by JSON-LD docum
 
     <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Zbiór_wywiadów">
         <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Dzieło_literatury_faktu"/>
+        <rdfs:label xml:lang="en">Collection of interviews</rdfs:label>
+        <rdfs:label xml:lang="pl">Zbiór wywiadów</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
