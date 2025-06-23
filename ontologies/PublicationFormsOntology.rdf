@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#"
+     xml:base="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:so="https://schema.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl">
+        <owl:versionIRI rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl/0.3"/>
+        <dc:creator>Michał Rój</dc:creator>
+        <rdfs:comment xml:lang="en">Here is the ontology of forms of literary works publication.
+
+Its main purpose is to serve as a vocabulary for easy-to-use JSON-LD documents. 
+
+Created for use, for example, in lists of read books to indicate what type or form of work we are dealing with.
+Since the work we may want to note can be a single poem (from a larger collection) and an entire collection (volume) of poems, a single short story and a collection of short stories, a novel and an anthology, this ontology defines concepts that correspond to all the forms mentioned above—without the need to construct more complex formal-logical structures.
+
+Most concepts from this ontology are planned to be referred to concepts from other, more developed and more popular ontologies, while the properties and concepts introduced here will be made &apos;equivalent&apos; or related in other ways to the base concepts.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This ontology is still a work-in-progress.
+The current goal is to introduce all necessary terms to be used by JSON-LD documents but their correct definitions will be the future task.</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Audiobook -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Audiobook">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#WorkExpressedInSpokenForm"/>
+        <rdfs:label xml:lang="en">Audiobook</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Autobiography -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Autobiography">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Biography"/>
+        <rdfs:label xml:lang="en">Autobiography</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Biography -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Biography">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#NonFictionWork"/>
+        <rdfs:label xml:lang="en">Biography</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfColumns -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfColumns">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#NonFictionWork"/>
+        <rdfs:label xml:lang="en">Collection of columns</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfEssays -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfEssays">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#NonFictionWork"/>
+        <rdfs:label xml:lang="en">Collection of essays</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfInterviews -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfInterviews">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#NonFictionWork"/>
+        <rdfs:label xml:lang="en">Collection of interviews</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfReportages -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfReportages">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#NonFictionWork"/>
+        <rdfs:label xml:lang="en">Collection of reportages</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfShortStories -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfShortStories">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#FictionWork"/>
+        <rdfs:label xml:lang="en">Collection of short stories</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Comic -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Comic">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#FictionWork"/>
+        <rdfs:label xml:lang="en">Comic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Essay -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Essay">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#NonFictionWork"/>
+        <rdfs:label xml:lang="en">Essay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#FictionWork -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#FictionWork">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Work"/>
+        <rdfs:label xml:lang="en">Fiction work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Guidebook -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Guidebook">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#NonFictionWork"/>
+        <rdfs:label xml:lang="en">Guidebook</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Interview -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Interview">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#NonFictionWork"/>
+        <rdfs:label xml:lang="en">Interview</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Metafiction -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Metafiction">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#FictionWork"/>
+        <rdfs:label xml:lang="en">Metafiction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#NonFictionWork -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#NonFictionWork">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Work"/>
+        <rdfs:label xml:lang="en">Non-fiction work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Novel -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Novel">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#FictionWork"/>
+        <rdfs:label xml:lang="en">Novel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Poem -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Poem">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#FictionWork"/>
+        <rdfs:label xml:lang="en">Poem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#PoetryCollection -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#PoetryCollection">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#FictionWork"/>
+        <rdfs:label xml:lang="en">Poetry collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#PopularScienceWork -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#PopularScienceWork">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#NonFictionWork"/>
+        <rdfs:label xml:lang="en">Popular science work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Reportage -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Reportage">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#NonFictionWork"/>
+        <rdfs:label xml:lang="en">Reportage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#ShortStory -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#ShortStory">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#FictionWork"/>
+        <rdfs:label xml:lang="en">Short story</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Text -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Text">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#WorkExpressedInWrittenForm"/>
+        <rdfs:label xml:lang="en">Text</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Textbook -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Textbook">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#NonFictionWork"/>
+        <rdfs:label xml:lang="en">Textbook</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Work -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Work">
+        <rdfs:label xml:lang="en">Work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#WorkExpressedInSpokenForm -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#WorkExpressedInSpokenForm">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#WorkExpressedInTheFormOf"/>
+        <rdfs:label xml:lang="en">Work expressed in spoken form</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#WorkExpressedInTheFormOf -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#WorkExpressedInTheFormOf">
+        <rdfs:label xml:lang="en">Work expressed in the form of</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#WorkExpressedInWrittenForm -->
+
+    <owl:Class rdf:about="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#WorkExpressedInWrittenForm">
+        <rdfs:subClassOf rdf:resource="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#WorkExpressedInTheFormOf"/>
+        <rdfs:label xml:lang="en">Work expressed in written form</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

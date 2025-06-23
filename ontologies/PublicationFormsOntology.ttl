@@ -1,0 +1,199 @@
+@prefix : <https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix so: <https://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#> .
+
+<https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl> rdf:type owl:Ontology ;
+                                                                                  owl:versionIRI <https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl/0.3> ;
+                                                                                  dc:creator "Michał Rój" ;
+                                                                                  rdfs:comment """Here is the ontology of forms of literary works publication.
+
+Its main purpose is to serve as a vocabulary for easy-to-use JSON-LD documents. 
+
+Created for use, for example, in lists of read books to indicate what type or form of work we are dealing with.
+Since the work we may want to note can be a single poem (from a larger collection) and an entire collection (volume) of poems, a single short story and a collection of short stories, a novel and an anthology, this ontology defines concepts that correspond to all the forms mentioned above—without the need to construct more complex formal-logical structures.
+
+Most concepts from this ontology are planned to be referred to concepts from other, more developed and more popular ontologies, while the properties and concepts introduced here will be made 'equivalent' or related in other ways to the base concepts."""@en ,
+                                                                                               """This ontology is still a work-in-progress.
+The current goal is to introduce all necessary terms to be used by JSON-LD documents but their correct definitions will be the future task."""@en ;
+                                                                                  owl:versionInfo 0.3 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Audiobook
+:Audiobook rdf:type owl:Class ;
+           rdfs:subClassOf :WorkExpressedInSpokenForm ;
+           rdfs:label "Audiobook"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Autobiography
+:Autobiography rdf:type owl:Class ;
+               rdfs:subClassOf :Biography ;
+               rdfs:label "Autobiography"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Biography
+:Biography rdf:type owl:Class ;
+           rdfs:subClassOf :NonFictionWork ;
+           rdfs:label "Biography"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfColumns
+:CollectionOfColumns rdf:type owl:Class ;
+                     rdfs:subClassOf :NonFictionWork ;
+                     rdfs:label "Collection of columns"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfEssays
+:CollectionOfEssays rdf:type owl:Class ;
+                    rdfs:subClassOf :NonFictionWork ;
+                    rdfs:label "Collection of essays"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfInterviews
+:CollectionOfInterviews rdf:type owl:Class ;
+                        rdfs:subClassOf :NonFictionWork ;
+                        rdfs:label "Collection of interviews"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfReportages
+:CollectionOfReportages rdf:type owl:Class ;
+                        rdfs:subClassOf :NonFictionWork ;
+                        rdfs:label "Collection of reportages"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfShortStories
+:CollectionOfShortStories rdf:type owl:Class ;
+                          rdfs:subClassOf :FictionWork ;
+                          rdfs:label "Collection of short stories"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Comic
+:Comic rdf:type owl:Class ;
+       rdfs:subClassOf :FictionWork ;
+       rdfs:label "Comic"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Essay
+:Essay rdf:type owl:Class ;
+       rdfs:subClassOf :NonFictionWork ;
+       rdfs:label "Essay"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#FictionWork
+:FictionWork rdf:type owl:Class ;
+             rdfs:subClassOf :Work ;
+             rdfs:label "Fiction work"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Guidebook
+:Guidebook rdf:type owl:Class ;
+           rdfs:subClassOf :NonFictionWork ;
+           rdfs:label "Guidebook"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Interview
+:Interview rdf:type owl:Class ;
+           rdfs:subClassOf :NonFictionWork ;
+           rdfs:label "Interview"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Metafiction
+:Metafiction rdf:type owl:Class ;
+             rdfs:subClassOf :FictionWork ;
+             rdfs:label "Metafiction"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#NonFictionWork
+:NonFictionWork rdf:type owl:Class ;
+                rdfs:subClassOf :Work ;
+                rdfs:label "Non-fiction work"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Novel
+:Novel rdf:type owl:Class ;
+       rdfs:subClassOf :FictionWork ;
+       rdfs:label "Novel"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Poem
+:Poem rdf:type owl:Class ;
+      rdfs:subClassOf :FictionWork ;
+      rdfs:label "Poem"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#PoetryCollection
+:PoetryCollection rdf:type owl:Class ;
+                  rdfs:subClassOf :FictionWork ;
+                  rdfs:label "Poetry collection"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#PopularScienceWork
+:PopularScienceWork rdf:type owl:Class ;
+                    rdfs:subClassOf :NonFictionWork ;
+                    rdfs:label "Popular science work"@en ;
+                    rdfs:comment "A work that explains scientific or technical topics in a manner accessible to general audiences."@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Reportage
+:Reportage rdf:type owl:Class ;
+           rdfs:subClassOf :NonFictionWork ;
+           rdfs:label "Reportage"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#ShortStory
+:ShortStory rdf:type owl:Class ;
+            rdfs:subClassOf :FictionWork ;
+            rdfs:label "Short story"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Text
+:Text rdf:type owl:Class ;
+      rdfs:subClassOf :WorkExpressedInWrittenForm ;
+      rdfs:label "Text"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Textbook
+:Textbook rdf:type owl:Class ;
+          rdfs:subClassOf :NonFictionWork ;
+          rdfs:label "Textbook"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Work
+:Work rdf:type owl:Class ;
+      rdfs:label "Work"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#WorkExpressedInSpokenForm
+:WorkExpressedInSpokenForm rdf:type owl:Class ;
+                           rdfs:subClassOf :WorkExpressedInTheFormOf ;
+                           rdfs:label "Work expressed in spoken form"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#WorkExpressedInTheFormOf
+:WorkExpressedInTheFormOf rdf:type owl:Class ;
+                          rdfs:label "Work expressed in the form of"@en .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#WorkExpressedInWrittenForm
+:WorkExpressedInWrittenForm rdf:type owl:Class ;
+                            rdfs:subClassOf :WorkExpressedInTheFormOf ;
+                            rdfs:label "Work expressed in written form"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
