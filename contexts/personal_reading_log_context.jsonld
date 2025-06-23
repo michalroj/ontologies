@@ -1,20 +1,18 @@
 {
   "@context": {
-    "@vocab": "https://michalroj.github.io/ontologies/ontologies/BooksTypesGenresAndStylesOntology.owl#",
+    "@vocab": "https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#",
     "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
 
-    "ID": "@id",
+    "id": "@id",
     "template": "@type", 
     "objects": "@graph",
-
-    "bookFormat": {"@type": "@vocab"},
-    "genre": {"@type": "@vocab"},
 
     "author": "schema:author",
     "title": "schema:name",
     "inLanguage": "schema:inLanguage",
 
-    "dateRead": "schema:dateRead",
+    "dateRead": { "@id": "schema:dateRead", "@type": "xsd:date" },
     "comment": "schema:comment",
     "review": "schema:review",
     "keywords": "schema:keywords"
