@@ -9,4 +9,4 @@ Thus it can be used in prefixes (such as in [the following context file](https:/
 as well as it can be loaded and parsed.
 
 Similarly, the context files can be used directly as IRIs. Example use of such context file is 
-in this [example personal reading log (in Polish)](https://michalroj.github.io/ontologies/examples/read_books_zajdel_2024.yamlld).
+in this [example personal reading log (in Polish)](https://michalroj.github.io/ontologies/examples/read_books_zajdel_2024.jsonld).

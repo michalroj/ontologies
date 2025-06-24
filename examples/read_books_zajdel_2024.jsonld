@@ -1,0 +1,79 @@
+{
+    "@context": "https://michalroj.github.io/ontologies/contexts/personal_reading_log_context_pl.jsonld",
+    "objects": [
+        {
+            "id": "#238",
+            "typ": "Powieść",
+            "autor": "Andrzej Sapkowski",
+            "tytuł": "Rozdroże kruków",
+            "język": "pl",
+            "data": "2025-01-21",
+            "komentarz": "Pierwsza moja powieść Sapkowskiego (wcześniej były opowiadania). Wciągająca, ale na pewno nie wybitna.",
+            "recenzja": "Widzę dużo niedoskonałości. Nie widzę tu świetnego, ciętego i błyskotliwego języka. Pomysły też takie przyciężkawe: mam problem ze zbyt nierealistycznymi sytuacjami (ktoś kogoś chce zabić, pojawia się kto inny, zaraz kto inny tego kogoś innego powstrzymuje itp.). Takie to przerysowane i infantylne. Po drugie, nie wiadomo skąd i jak pojawiają się schematy szkolenia młodzianina przez starszego czarodzieja (z jednej strony tak to opatrzony motyw, ale z drugiej strony czemu tak krótko i powierzchownie?). Zastanawiam się jak dużo jest odniesień do świata znanego czytelnikowi reszty dzieł o Wiedźminie. Coś mi się wydaje, że trochę tego jest (np. kilka zdań zakończenia), natomiast bardzo dobrze się rozumie całość bez żadnego tła. Czego nie można Sapkowi odmówić to tego, że potrafi wciągnąć ludzi szybko w fabułę, z której nie chce go wypuścić. Czyta się bardzo szybko. Mimo wszędobylskiej łaciny i neologizmów, książkę się wprost połyka. Narracja trzecioosobowa zmieszana z listami/raportami - ładnie to powiązane. Niedopowiedzenia są, ale wiadomo co się dzieje. Wzmianki w innych rozdziałach dobudowują resztę... Ogólnie pozytywnie, ale czy jest to autor, który gdyby nie był znany miałby jakieś szanse? Nie wiem. I trochę wątpię.",
+            "słowa kluczowe": "Zajdel 2024 - nominacja"
+        },
+        {
+            "id": "#239",
+            "typ": [
+                "Powieść",
+                "Audiobook"
+            ],
+            "autor": "Anna Kańtoch",
+            "tytuł": "Czeluść",
+            "język": "pl",
+            "data": "2025-01-22",
+            "komentarz": "Bardzo dobre studium osoby cierpiącej na zaniki pamięci (demencja/alzheimer). Świetna, szybka fabuła. Powieść krótka. Bardzo dobra.",
+            "recenzja": "Słuchałem jako audiobooka w świetnej interpretacji Marii Seweryn, momentami tak bardzo chciałem mieć pod ręką książkę, żeby połykać dalej i dalej, żeby się cofnąć, sprawdzić nazwiska. Jest tu jakaś tajemnica, nierozwikłana do końca... przynajmniej ja jej nie odczytałem. Może pokazano kilka alternatywnych - możliwych okoliczności, w których to różne osoby przeżywają (w sensie - wychodzą żywo) z wyjazdu do kamieniołomów. A może to pamięć plata jej figle. Czy naprawdę rozmawia z osobami? Czy z niektórymi nie rozmawia? Dopiero po czasie zauważa się brak spójności, niejasności. Kim jest Kaja? Kim jest sama bohaterka Agnieszka? A może ona sama jest nieralna? Niezależnie od wszystkiego i - tego że ta fabuła nie domyka się tak jak bym chciał - książka bardzo dobra i warta polecenia.",
+            "słowa kluczowe": "Zajdel 2024 - nominacja"
+        },
+        {
+            "id": "#246",
+            "typ": "Powieść",
+            "autor": "Magdalena Salik",
+            "tytuł": "Wściek",
+            "język": "pl",
+            "data": "2025-04-12",
+            "komentarz": "Powieść o sci-fi bliskiej przyszłości, w środowisku inteligentnych ludzi, działaczy, aktywistów, naukowców, wśród których coś zaczyna się dziać.",
+            "recenzja": "Z jakiegoś powodu ta książka mocno się różniła od tego czego się spodziewałem. Chyba myślałem dużo o jakimś 'babskim' aktywiźmie, trochę dla mnie niezrozumiałym. Tutaj dostałem dużo 'męskiej' perspektywy (nawet gdy wypowiadają się kobiety, czy raczej 'kobiety'), w tym Salik jest niezła. Porusza wiele bardzo ważnych współczesnych problemów i tematów. Udaje jej się wrzucić w ciekawy sposób, często bezemocjonalny, reporterski kwestie klimatyczne (ostatnie lodowce znikają i to jest po prostu fakt, nawet jeśli część bohaterów ma mocno emocjonalny stosunek). Te problemy w większości są mi znane i dla mnie interesujące, więc samo ich zgromadzenie tutaj i literacja ich obróbka ma dużą wartość i daje przyjemność z czytania. Styl książki w postaci ciągle zmieniających się różnych perspektyw / narratorów - na pewno trudny do napisania - jest też początkowo trudny do odczytania. Pomogła mi 'mapa postaci'. Ogólnie powieść ciekawa, niezła, ale ta fabuła i zakończenie mi jakoś nie podeszła (z tym całym AI-jem), ale myślę, że to jeden z pierwszych pomysłów był, że AI-je oddalone od dzisiejszych chatbotów tak dalece jak my od Tiktaalika, są w stanie wymyślić i zorganizować akcję, o której mowa.",
+            "słowa kluczowe": "Zajdel 2024 - nominacja"
+        },
+        {
+            "id": "#248",
+            "typ": "Powieść",
+            "autor": "Olga Niziołek",
+            "tytuł": "Dzieci jednej pajęczycy",
+            "język": "pl",
+            "data": "2025-05-30",
+            "komentarz": "Powieść o lekko tylko fantastyczna i lekko scf-fi bliskiej przyszłości. Brak wody, upadek społeczeńtwa, dziwaczna wiara. I nasi bohaterowie.",
+            "recenzja": "Bardzo dojrzała książka jak na debiut książkowy. Czyta się świetnie, aż trudno się oderwać. Rozdziały, jak i cała książka - niespecjalnie długie, stąd idelne wpasowują się w '3 stacje metra'. Świat przedstawiony przekonujący, styl niezły, duża pomysłowość. No i książka ma jakieś zakończenie!",
+            "słowa kluczowe": "Zajdel 2024 - nominacja"
+        },
+        {
+            "id": "#249",
+            "typ": [
+                "Powieść",
+                "Audiobook"
+            ],
+            "autor": "Łukasz Kucharczyk",
+            "tytuł": "Wszystkie drogi prowadzą",
+            "język": "pl",
+            "data": "2025-06-04",
+            "komentarz": "Humorystyczna powiastka dziejąca się w świecie fantasy (magia, stwory, niziołki) powiązanej z tematami naukowo-akademickimi. Satyra na świat uniwersytecki.",
+            "recenzja": "Nie jest to mój gatunek. Mało mnie interesowała fabuła i świat przedstawiony. Natomiast trzeba przyznać autorowi, że wiele jego pomysłów i gagów była bardzo sensowna i śmieszna. Skojarzenia, które miał i szereg bardzo współczesnych odniesień - podobnie jak u Pretchetta i Lema - są niezłe. Ale - podobnie jak u nich - nie potrafię się w takich pozycjach zakochać. Wydaje mi się, że z czasem w lekturze liczba ciekawych gagów się zmniejszła (może autor się na początku 'wystrzelał' z pomysłów). Poza tym - książkę czyta się i słucha ciężko. Neologizmy, modyfikacje znaczenia terminów i użycie terminów okołonaukowych wymagają skupienia tak, że łatwo stracić wątek słuchają audiobooka podczas robienia innych rzeczy. Słowem - dzieło wymagające. Na koniec może powiem, że słuchałem audiobooka w świetnej interpretacji Macieja Kowalika, który wczuł się w klimat wyjątkowo dobrze. W moim serwisie streamingowym miałem też możliwość przełączenia się między tekstem i audiobookiem - pomysł wyśmienity, chociaż momentami niedopracowany - szczególnie gdy kliknąłem na przypis i mnie przeniosło za sam koniec książki, z której powrócić już nie umiałem.",
+            "słowa kluczowe": "Zajdel 2024 - nominacja"
+        },
+        {
+            "id": "#251",
+            "typ": [
+                "Powieść"
+            ],
+            "autor": "Anna Brzezińska",
+            "tytuł": "Mgła",
+            "język": "pl",
+            "data": "2025-06-23",
+            "komentarz": "Styl. Styl. Styl. Kwiecisty, powłóczysty, mięsisty. Fabuła? Jakaś chyba jest.",
+            "recenzja": "Od początku widać fascynację autorki Italią - i nie, nie - nie Włochami współczesnymi, a pewnym przebrzmiałym już dawnym światem - średniowiecznym chyba - który przecież znamy i widujemy teraz jeszcze: te miasta starożytne, zmurszałe, te pustostany, zabite dechami okna i odpadająca z nich farba, to te właśnie miasta opisane w pierwszej osobie - długo myślałem, że narrator jest jeden, ale nie, nie - musiało być ich raczej dwóch, po drugim czytaniu pewnie bym się zorientował, ale nie planuję - ich styl - tych narratorów - dla mnie był nierozróżnialny, chociaż fabuła jakby inna i to ona powinna mnie oprzytomnić, ale kto by tam zwracał uwagę na fabułę, którą tu ledwo można było uchwycić bo nie o nią tu chodzi a o styl: gawędziarski, rozwlekły, z szeregiem świetnych porównań, spostrzeżeń i myśli, a jakże współczesnych też - ale o niebo lepiej wplecionych niż w '1670' czy u Sapka nawet, a styl ów - taki, że prawie się słyszy głos narratora; obecność języka włoskiego - te nazwy, te imiona, te odmiany i te wtręty - dla mnie dodatkowa przyjemność z czytania, no gdyby nie to, że tam nie dzieje się wiele - ot postępujący upadek miasta, podbity jeszcze przez najazd obcych wojsk, wykorzystany przez różnej maści cwaniaków, pożary, kradzieże, zabójstwa i... prawie żadnej w tym fantastyki - no niby jest smok i jest nebbia, ale może to tylko ciemnota i zabobon prostaczków, zwidy pijaczków, tak czy inaczej wyciąć to byłoby łatwo...",
+            "słowa kluczowe": "Zajdel 2024 - nominacja"
+        }
+    ]
+}
