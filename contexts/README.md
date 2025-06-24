@@ -83,20 +83,20 @@ objects:
 
 Note that the IRI specified in the top line (as '@context') determined the variant of the vocabulary used in the RECORDs' descriptions.
 The [above context](https://michalroj.github.io/ontologies/contexts/personal_reading_log_context_pl.jsonld) is a Polish variant of the context.
-(If fact it is the same file as [the context file from this repository](personal_reading_log_context_pl.jsonld) but made available as a ready-to-be-used resource
-from Github pages. 
+(In fact it is the same file as [the context file from this repository](personal_reading_log_context_pl.jsonld) but made available as a ready-to-be-used resource
+from Github pages.)
 
 Another variant of context would be [the English version of this context](personal_reading_log_context.jsonld). Then, the fields/attributes would be different.
 
-In both cases, however, most of the attributes are mapped into the same ontology properties (schema.org in this case), such as 'schema:author, schema:name or schema:inLanguage).
+In both cases, however, most of the attributes are mapped into the same ontology properties (schema.org in this case), such as 'schema:author', 'schema:name' or 'schema:inLanguage').
 
 Example records for both variants are shown above (the Tony Judt's "Postwar" book).
 
-An example with more records is shown [here in JSON-LD](../examples/read_books_zajdel_2024.jsonld) and [here in YAML-LD](../examples/read_books_zajdel_2024.yaml)
-(this is the list of the [Zajdel award](https://en.wikipedia.org/wiki/Janusz_A._Zajdel_Award) nominees for 2024), the prize not yet won now.
+An example with more records is shown [here in JSON-LD](../examples/read_books_zajdel_2024.jsonld) and [here in YAML-LD](../examples/read_books_zajdel_2024.yamld)
+(this is the list of the [Zajdel award](https://en.wikipedia.org/wiki/Janusz_A._Zajdel_Award) nominees for 2024, the prize not yet won now).
 
-What is important, in the records descriptions one can use the 'type' defined in the PublicationsFormsOntology, for instance, both 'PopularScienceWork' and 'Audiobook' classes come from
-this ontology. This ontology has also language-specific versions.
+What is important, in the records descriptions one can use the 'type' defined in the PublicationsFormsOntology (either [English version](../ontologies/PublicationsFormsOntology.ttl) 
+or [Polish version](../ontologies/PublicationsFormsOntology_pl.ttl)), for instance, both 'PopularScienceWork' and 'Audiobook' classes come from this ontology (English variant).
 
 
 ## References to schema.org concepts
