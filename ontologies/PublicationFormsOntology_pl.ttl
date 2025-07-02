@@ -2,6 +2,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix so: <https://schema.org/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pfo: <https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -9,7 +10,8 @@
 @base <https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#> .
 
 <https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl> rdf:type owl:Ontology ;
-                                                                                     owl:versionIRI <https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl/0.3> ;
+                                                                                     owl:versionIRI <https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl/0.4> ;
+                                                                                     owl:imports <https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl/0.4> ;
                                                                                      dc:creator "Michał Rój" ;
                                                                                      rdfs:comment """Oto ontologia form publikacji dzieł literackich.
 
@@ -33,7 +35,7 @@ be used in Polish versions of book-related files.
 Most concepts from this ontology are planned to be imported from other, more developed and more popular ontologies, while the properties and concepts introduced here will be made 'equivalent' or related in other ways to the base concepts."""@en ,
                                                                                                   """This ontology is still a work-in-progress.
 The current goal is to introduce all necessary terms to be used by JSON-LD documents but their correct definitions will be the future task."""@en ;
-                                                                                     owl:versionInfo 0.3 .
+                                                                                     owl:versionInfo 0.4 .
 
 #################################################################
 #    Annotation properties
@@ -46,6 +48,115 @@ dc:creator rdf:type owl:AnnotationProperty .
 #################################################################
 #    Classes
 #################################################################
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Audiobook
+pfo:Audiobook owl:equivalentClass :Audiobook .
+
+# Added by hand...
+pfo:Antology owl:equivalentClass :Antologia .
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Autobiography
+pfo:Autobiography owl:equivalentClass :Autobiografia .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Biography
+pfo:Biography owl:equivalentClass :Biografia .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfColumns
+pfo:CollectionOfColumns owl:equivalentClass :Zbiór_felietonów .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfEssays
+pfo:CollectionOfEssays owl:equivalentClass :Zbiór_esejów .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfInterviews
+pfo:CollectionOfInterviews owl:equivalentClass :Zbiór_wywiadów .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfReportages
+pfo:CollectionOfReportages owl:equivalentClass :Zbiór_reportaży .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#CollectionOfShortStories
+pfo:CollectionOfShortStories owl:equivalentClass :Zbiór_opowiadań .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Comic
+pfo:Comic owl:equivalentClass :Komiks .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Essay
+pfo:Essay owl:equivalentClass :Esej .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#FictionWork
+pfo:FictionWork owl:equivalentClass :Dzieło_literatury_pięknej .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Guidebook
+pfo:Guidebook owl:equivalentClass :Poradnik .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Interview
+pfo:Interview owl:equivalentClass :Wywiad .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Metafiction
+pfo:Metafiction owl:equivalentClass :Metafikcja .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#NonFictionWork
+pfo:NonFictionWork owl:equivalentClass :Dzieło_literatury_faktu .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Novel
+pfo:Novel owl:equivalentClass :Powieść .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Poem
+pfo:Poem owl:equivalentClass :Wiersz .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#PoetryCollection
+pfo:PoetryCollection owl:equivalentClass :Tomik_wierszy .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#PopularScienceWork
+pfo:PopularScienceWork owl:equivalentClass :Praca_popularnonaukowa .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Reportage
+pfo:Reportage owl:equivalentClass :Reportaż .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#ShortStory
+pfo:ShortStory owl:equivalentClass :Opowiadanie .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Text
+pfo:Text owl:equivalentClass :Tekst .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#Textbook
+pfo:Textbook owl:equivalentClass :Podręcznik .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#WorkExpressedInSpokenForm
+pfo:WorkExpressedInSpokenForm owl:equivalentClass :Dzieło_wyrażone_w_formie_mówionej .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#WorkExpressedInWrittenForm
+pfo:WorkExpressedInWrittenForm owl:equivalentClass :Dzieło_wyrażone_w_formie_pisanej .
+
+
+###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Antologia
+:Antologia rdf:type owl:Class ;
+           rdfs:subClassOf :Dzieło_literatury_pięknej ;
+           rdfs:label "Antologia"@pl ,
+                      "Antology"@en .
+
 
 ###  https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl#Audiobook
 :Audiobook rdf:type owl:Class ;
