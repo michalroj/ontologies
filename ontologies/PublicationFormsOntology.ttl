@@ -9,7 +9,6 @@
 @base <https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl#> .
 
 <https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl> rdf:type owl:Ontology ;
-                                                                                  owl:versionIRI <https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl/0.4> ;
                                                                                   dc:creator "Michał Rój" ;
                                                                                   rdfs:comment """Here is the ontology of forms of literary works publication.
 
@@ -21,7 +20,7 @@ Since the work we may want to note can be a single poem (from a larger collectio
 Most concepts from this ontology are planned to be referred to concepts from other, more developed and more popular ontologies, while the properties and concepts introduced here will be made 'equivalent' or related in other ways to the base concepts."""@en ,
                                                                                                """This ontology is still a work-in-progress.
 The current goal is to introduce all necessary terms to be used by JSON-LD documents but their correct definitions will be the future task."""@en ;
-                                                                                  owl:versionInfo 0.3 .
+                                                                                  owl:versionInfo 0.4 .
 
 #################################################################
 #    Annotation properties
