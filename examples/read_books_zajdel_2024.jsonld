@@ -1,7 +1,7 @@
 {
     "@context": [ 
 		"https://michalroj.github.io/ontologies/contexts/personal_reading_log_context_pl.jsonld",
-                { "@base": "https://michalroj.github.io/ontologies/examples/read_books_zajdel_2024.jsonld" }
+                { "@base": "https://michalroj.github.io/ontologies/examples/read_books_zajdel_2024.jsonld#" }
     ],
     "objects": [
         {
