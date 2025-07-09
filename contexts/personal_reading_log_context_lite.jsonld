@@ -1,6 +1,6 @@
 {
   "@context": {
-    "schema": "http://schema.org/",
+    "schema": "https://schema.org/",
 
     "author": "schema:author",
     "title": "schema:name",
