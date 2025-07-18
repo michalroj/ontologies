@@ -6,8 +6,8 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
 
     "id": "@id",
-    "type": "@type",
-    "objects": "@graph",
+    "typ": "@type",
+    "obszary": "@graph",
 
     "nazwa_działu": "math:branch",
     "nazwa_obszaru": "math:area",
