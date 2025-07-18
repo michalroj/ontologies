@@ -1,0 +1,25 @@
+{
+  "@context": {
+    "@vocab": "https://michalroj.github.io/ontologies/ontologies/MathMetadata_pl.ttl#",
+    "math": "https://michalroj.github.io/ontologies/ontologies/MathMetadata_pl.ttl#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "id": "@id",
+    "type": "@type",
+    "objects": "@graph",
+
+    "nazwa_działu": "math:branch",
+    "nazwa_obszaru": "math:area",
+    "podstawowe_informacje": "math:basic_info",
+    "zakres": "math:range",
+       "zakres_example": "podstawowy",
+    "definicje": "math:simple_definition",
+    "wzory": "math:formula",
+    "nazwa": "math:formula_name",
+    "wzór": "math:formula_text",
+    "kometarz": "math:formula_comment",
+    "algorytmy": "math:algorithm",
+    "zastosowania": "math:application"
+}
+}
