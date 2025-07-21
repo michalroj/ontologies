@@ -9,7 +9,7 @@
     "type": "@type", 
     "objects": "@graph",
 
-    "exam_id": "oep:exam_id"
+    "exam_id": "oep:exam_id",
     "variant": "oep:exam_variant",
     "publicationDate": "eop:publication_date",
     "source": "eop:publically_accessible_link",
@@ -18,7 +18,10 @@
     "page": "eop:page_on_the_sheet",
     "exam_sheet_id": "eop:exam_sheet_id",
     "sub_questions": "eop:sub_questions",
-    "related_questions": "eop:related_questions"
+    "related_questions": "eop:related_questions",
 
+    "date": "schema:date",
+    "points_per_question": "eop:points_per_question",
+    "score": "eop:score"
   }
 }
