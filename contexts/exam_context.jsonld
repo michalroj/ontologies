@@ -11,7 +11,7 @@
 
     "exam_id": "oep:exam_id",
     "variant": "oep:exam_variant",
-    "publicationDate": "eop:publication_date",
+    "publicationDate": "schema:datePublished",
     "source": "eop:publically_accessible_link",
 
     "number": "eop:question_number",
@@ -20,7 +20,7 @@
     "sub_questions": "eop:sub_questions",
     "related_questions": "eop:related_questions",
 
-    "date": "schema:date",
+    "attempt_date": "eop:attempt_date",
     "points_per_question": "eop:points_per_question",
     "score": "eop:score"
   }
