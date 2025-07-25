@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "ss7_map": "https://example.org/ss7_map_ontology#",
+
+    "gsm_old.localValue": "ss7_map:op_code",
+    "gsm_map.sm.msisdn": "ss7_map:msisdn_address_as_hex",
+    "sccp.calling.digits": "ss7_map:calling_party_gt_address",
+    "sccp.called.digits": "ss7_map:called_party_gt_address"
+  }
+} 
