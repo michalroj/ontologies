@@ -2,6 +2,17 @@
   "@context": {
     "ss7_map": "https://example.org/ss7_map_ontology#",
 
+    "_index": "ss7_map:index_name",
+    "_type": "@type",
+    "_source": "ss7_map:data_source"
+    "layers": "ss7_map:protocol_layers",
+    "frame": "ss7_map:frame",
+    "sctp": "ss7_map:sctp",
+    "m3ua": "ss7_map:m3ua",
+    "sccp": "ss7_map:sccp",
+    "tcap": "ss7_map:tcap",
+    "gsm_map": "ss7_map:gsm_map",
+    "gsm_sms": "ss7_map:gsm_sms",
     "gsm_old.localValue": "ss7_map:op_code",
     "gsm_map.sm.msisdn": "ss7_map:msisdn_address_as_hex",
     "sccp.calling.digits": "ss7_map:calling_party_gt_address",
