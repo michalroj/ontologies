@@ -4,7 +4,7 @@
 
     "_index": "ss7_map:index_name",
     "_type": "@type",
-    "_source": "ss7_map:data_source"
+    "_source": "ss7_map:data_source",
     "layers": "ss7_map:protocol_layers",
     "frame": "ss7_map:frame",
     "sctp": "ss7_map:sctp",
