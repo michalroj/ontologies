@@ -13,12 +13,12 @@
     "nazwa_obszaru": "math:area",
     "podstawowe_informacje": "math:basic_info",
     "zakres": "math:range",
-       "zakres_example": "podstawowy",
+    "zakres_example": "podstawowy",
     "definicje": "math:simple_definition",
     "wzory": "math:formula",
     "nazwa": "math:formula_name",
     "wzór": "math:formula_text",
-    "kometarz": "math:formula_comment",
+    "komentarz": "math:formula_comment",
     "algorytmy": "math:algorithm",
     "zastosowania": "math:application"
 }

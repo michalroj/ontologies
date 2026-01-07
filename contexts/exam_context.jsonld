@@ -1,7 +1,7 @@
 {
   "@context": {
     "@vocab": "https://michalroj.github.io/ontologies/ontologies/ExamsAndQuestions.ttl#",
-    "oep":    "https://michalroj.github.io/ontologies/ontologies/ExamsAndQuestions.ttl#",
+    "eop":    "https://michalroj.github.io/ontologies/ontologies/ExamsAndQuestions.ttl#",
     "schema": "https://schema.org/",
     "xsd":    "http://www.w3.org/2001/XMLSchema#",
 
@@ -9,14 +9,14 @@
     "type": "@type", 
     "objects": "@graph",
 
-    "exam_id": "oep:exam_id",
-    "variant": "oep:exam_variant",
+    "exam_id": "eop:exam_id",
+    "variant": "eop:exam_variant",
     "publicationDate": "schema:datePublished",
     "source": "eop:publically_accessible_link",
 
     "number": "eop:question_number",
     "page": "eop:page_on_the_sheet",
-    "exam_sheet_id": "eop:exam_sheet_id",
+    "exam_sheet_id": { "@id": "eop:exam_sheet_id", "@type": "@id" },
     "sub_questions": "eop:sub_questions",
     "related_questions": "eop:related_questions",
 

@@ -99,7 +99,7 @@ What is important, in the records descriptions one can use the 'type' defined in
 or [Polish version](../ontologies/PublicationsFormsOntology_pl.ttl)), for instance, both 'PopularScienceWork' and 'Audiobook' classes come from this ontology (English variant).
 
 
-## References to schema.org concepts
+### References to schema.org concepts
 
 The proposed context files employ schema.org for most of the above fields:
 
@@ -115,4 +115,5 @@ For 'type' and 'format' I employ a separate ontology (of my design) even if thei
 
 - "http://schema.org/genre": Genre of the creative work, broadcast channel or group.
 - "http://schema.org/bookFormat": The format of the book.
+
 
