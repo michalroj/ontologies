@@ -1,28 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contexts and ontologies</title>
+    <style>
+    </style>
+</head>
 <body>
-	<h1>Contexts and ontologies</h1>
-	Here both contexts and ontologies are published to be used freely by all interested parties.
-	<h4>Context files</h4>
-	The following JSON-LD context files are currently available:
-	<div>
+    <header>
+       <h1>Ontologies and contexts</h1>
+       <div> This page contains some simple ontologies and contexts (i.e., descriptions of fields used by JSON-LD files which turn them into legal RDF representations).
+	     The ontologies and contexts are from differents domains applied in different projects (related to, e.g., collection of books read, annotating school exams
+	     or expressing information about school views on branches of mathematics). 
+
+	     <p>Context files refer to well established ontologies (such as 'schema.org'), however, in many specific cases there is a need to use own ontologies. This is why
+	     we present the following ontologies: 
+	     <ol>
+		     <li>a so-called PublicationFormsOntology, which has two versions (English and Polish) and both can be used in describing the read books (or, potentially, other kinds of literature-related
+			     data).</li>
+		     <li>Exams ontology (only Polish version)</li>
+		     <li>Math areas ontology (work in progress, not yet included)</li>
+	     </ol>
+
+
+	     </p>
+       </div>
+       <h2>Table of contents</h2>
+    <div>
+	    <ul>
+		    <li><a href="#contexts">1. Context files</a>
+		    <ul>
+			    <li><a href="#personal-reading-log">1.1 Personal reading log context</a>
+		  	    <ul>
+	                       <li><a href="#application-in-a-reading-log">1.1.1 Application in a reading log</a></li>
+	                       <li><a href="#references-to-schema-org-concepts">1.1.2 References to schema.org concepts</a></li>
+			    </ul>
+			    <li><a href="#math_branches">1.2 Math branches description context</a></li>
+			    <li><a href="#exams">1.3 Expressing exams context</a></li>
+		    </ul>
+		    <li><a href="#ontologies">2. Ontologies</a>
+		    <ul>
+			    <li><a href="#publications_ont">2.1 Publication forms ontology</a></li>
+			    <li><a href="#exams_ontology">2.2 Exams ontology</a></li>
+			    <li><a href="#math_ontology">2.3 Math branches / areas ontology</a></li>
+		    </ul>
+	    </ul>
+    </div>
+    </header>
+    <h2 id="context">1. Contexts</h2>
+    <div class="container">
+        <h3 id="personal-reading-log">1.1 Personal Reading Log</h3>
+        <p><strong>Objective</strong>: the objective of this context is to describe the fields of the 'personal log' about books (such as novels) or other kinds of publications (such as short stories) that have been read by me (or potentially - by anyone).</p>
+        <p><strong>Format</strong>: The original format is YAML (and 1-to-1 JSON representation is available)</p>
+        <p><strong>Fields</strong>: The following information elements are defined for each record:</p>
         <ul>
-		<!--
-		<li><a href="contexts/personal_reading_log_context_lite.jsonld">personal_reading_log_context_lite.jsonld</a> - a context useful to make notes about read books including author, title, opinion and some other information.
-		<li><a href="contexts/personal_reading_log_context_lite_pl.jsonld">personal_reading_log_context_lite_pl.jsonld</a> - a context useful to make notes about read books including author, title,
-			opinion and some other information. Polish version.
-		-->
-		<li><a href="contexts/personal_reading_log_context.jsonld">personal_reading_log_context.jsonld</a> - like above, a context useful to make notes about read books including author, title,
-			opinion and some other information. This context makes use an additional ontology which defines some literary concepts (genres, physical media, etc.)
-		<li><a href="contexts/personal_reading_log_context_pl.jsonld">personal_reading_log_context_pl.jsonld</a> - like above, a context useful to make notes about read books including author, title,
-			opinion and some other information. Polish version. This context makes use an additional ontology which defines some literary concepts (genres, physical media, etc.)
-	</ul>
-	</div>
-	<h4>Ontologies</h4>
-	<div>
-		<li><a href="ontologies/PublicationFormsOntology.ttl">PublicationFormsOntology.ttl</a> - an ontology that collects publication works types / genres useful for 
-			expressing information about read books.
-			I consider this ontology a work-in-progress which will evolve, however I'll try to keep the vocabulary as stable as possible.
-		<li><a href="ontologies/PublicationFormsOntology_pl.ttl">PublicationFormsOntology_pl.ttl</a> - the same ontology as above (Polish version). 
-			Watch out! This ontology contains Polish names of concepts/individuals to be easily used in JSON-LD descriptions.
-			I consider this ontology a work-in-progress which will evolve, however I'll try to keep the vocabulary as stable as possible.
-	</div>
+            <li>author: the author of the work</li>
+            <li>title: the title of the work</li>
+            <li>type: the type/form of the work (it can be a book with a novel inside, but also can be a collection of items such as collection of poems, a single short story published in a journal, etc..)</li>
+            <li>format: the form/medium of the book (either 'text' or 'audiobook')</li>
+            <li>language: the language in which the book was read</li>
+            <li>date: the date when the book was read (=the reading was finished)</li>
+            <li>comment: a short note about the book, one or two sentences usually covering the first impressions after the book have been read.</li>
+            <li>review: a more systematic, longer description of the book usually taking the form of a review with personal remarks.</li>
+            <li>keywords: keywords (optional) to be used if a position has some specific feature (e.g. is a mandatory reading or has won a prize)</li>
+        </ul>
+        <p><strong>Example</strong>: The example record (English variant, YAML) is as follows:</p>
+        <pre><code>id: '#120'
+author: Tony Judt
+title: 'Postwar: A history of Europe since 1945'
+type:
+- PopularScienceWork
+- Audiobook
+inLanguage: en
+dateRead: '2014-10-10'
+comment: Magnificent work. Now I know a lot more about the world. And about Europe. And about Poland.
+review: "Well, until having listened to this book I thought I know a lot about the recent history of Europe (after the war). What I knew
+         was a very limiting Polish perspective with some elements completely missing and explained from the Communists' Poland perspective.
+         For example, I was aware of many 'reforms' which were introducted in Poland in late '40 and '50. What I didn't know was that most of them,
+         if not all, we designed in Moscow in Soviet Union and were introduced similarily in all (or most) of Soviet block countries.
+         In this perspective I could understand better that Eastern block was not as independent as I might have thought and who was in charge."</code></pre>
+
+   <p> The above entry uses the following context: 
+        <a href="https://michalroj.github.io/ontologies/contexts/personal_reading_log_context.jsonld">personal_reading_log_context.jsonld</a>
+    </p>
+
+
+   <p><strong>Example</strong>: The example record (Polish variant, YAML) is as follows:</p>
+   <pre><code>id: '#120'
+autor: Tony Judt
+tytuł: 'Postwar: A history of Europe since 1945'
+typ:
+- Tekst_popularnonaukowy
+- Audiobook
+język: en
+data: '2014-10-10'
+komentarz: Wspaniała. Wiem dużo więcej o świecie. O Europie. O Polsce.
+recenzja: "Zanim przesłuchałem tę książkę myślałem, że wiem sporo o tym co się działo w powojennej Europie. A tu okazało się, że to co
+           wiedziałem to była ograniczona i ograniczająca perspektywa polska, jeszcze dodatkowo zniekształcona przez przemilczenia i przekłamania ery
+           komunistycznej w Polsce. Przykładowo, pojąłem jak najróżniejsze 'reformy' wprowadzone we wczesnych latach, różne denominacje, walka z drobnym
+           biznesem były zaprojektowane w Moskwie i systematycznie wprowadzane w innych krajach bloku komunistycznego (Bułgarii, na Węgrzech, w Czechosłowacji).
+           A niepodległość była faktycznie tylko iluzoryczna (bez decyzyjności za to z flagą, hymnem i medalami na olimpiadzie 'dla Polski')."</code></pre>
+
+   <p> The above entry uses the following context:
+      <a href="https://michalroj.github.io/ontologies/contexts/personal_reading_log_context_pl.jsonld">personal_reading_log_context_pl.jsonld</a> 
+   </p>
+   <p>
+      A full JSON-LD example file (context + data) can be found <a href="https://michalroj.github.io/ontologies/examples/read_books_zajdel_2024.jsonld">here</a>.
+   </p>
+
+        <h3 id="application-in-a-reading-log">1.1.1 Application in a Reading Log</h3>
+        <p>The ideas of a 'reading log' is a file which contains short notes about books that have been read. A general structure of the YAML file of this kind is as follows:</p>
+        <pre><code>'@context': https://michalroj.github.io/ontologies/contexts/personal_reading_log_context_pl.jsonld
+objects:
+- RECORD 1
+- RECORD 2
+- RECORD 3
+- etc.</code></pre>
+        <p>Note that the IRI specified in the top line (as '@context') determined the variant of the vocabulary used in the RECORDs' descriptions. The <a href="https://michalroj.github.io/ontologies/contexts/personal_reading_log_context_pl.jsonld">above context</a> is a Polish variant of the context. </p>
+        <p>Another variant of context is <a href="https://michalroj.github.io/ontologies/contexts/personal_reading_log_context.jsonld">the English version of this context</a>. 
+	Then, the fields/attributes would be different.</p>
+        <p>In both cases, however, most of the attributes are mapped into the same ontology properties (schema.org in this case), such as 'schema:author', 'schema:name' or 'schema:inLanguage').</p>
+        <p>Example records for both variants are shown above (the Tony Judt's "Postwar" book).</p>
+
+        <p>An example with more records is shown <a href="https://michalroj.github.io/ontologies/examples/read_books_zajdel_2024.jsonld">here in JSON-LD</a> (this is the list of the <a href="https://en.wikipedia.org/wiki/Janusz_A._Zajdel_Award">Zajdel award</a> nominees for 2024).</p>
+
+        <p>What is important, in the records descriptions one can use the 'type' defined in the PublicationsFormsOntology 
+	(either <a href="https://michalroj.github.io/ontologies/ontologies/PublicationsFormsOntology.ttl">English version</a> or 
+	<a href="https://michalroj.github.io/ontologies/ontologies/PublicationsFormsOntology_pl.ttl">Polish version</a>), for instance, 
+	both 'PopularScienceWork' and 'Audiobook' classes come from this ontology (English variant).</p>
+
+        <h3 id="references-to-schema-org-concepts">1.1.2 References to schema.org concepts</h3>
+        <p>The proposed context files employ schema.org for most of the above fields:</p>
+        <ul>
+		<li><a href="http://schema.org/author">http://schema.org/author</a>: The author of this content or rating.</li>
+            <li><a href="http://schema.org/name">http://schema.org/name</a>: The name given to the resource.</li>
+            <li><a href="http://schema.org/inLanguage">http://schema.org/inLanguage</a>: The language of the content or performance or used in an action.</li>
+            <li><a href="http://schema.org/dateRead">http://schema.org/dateRead</a>: The date/time at which the message has been read by the recipient if a single recipient exists.</li>
+            <li><a href="http://schema.org/comment">http://schema.org/comment</a>: Comments, typically from users.</li>
+            <li><a href="http://schema.org/review">http://schema.org/review</a>: A review of the item.</li>
+            <li><a href="http://schema.org/keywords">http://schema.org/keywords</a>: Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.</li>
+        </ul>
+        <p>For 'type' and 'format' I employ a separate ontology (of my design) even if their meaning is close to:</p>
+        <ul>
+		<li><a href="http://schema.org/genre">http://schema.org/genre</a>: Genre of the creative work, broadcast channel or group.</li>
+		<li><a href="http://schema.org/bookFormat">http://schema.org/bookFormat</a>: The format of the book.</li>
+        </ul>
+    </div>
+    <h2 id="ontologies">2. Ontologies</h2>
+    <div class="container">
+        <h3 id="publications_ont">2.1 Publication Forms Ontology</h3>
+	<p>This is the ontology of forms of literary works publication.</p>
+
+	<p>Its main purpose is to serve as a vocabulary for easy-to-use JSON-LD documents.</p>
+
+        <p>Created to be used, for example, in lists of read books to indicate what type or form of work we are dealing with.
+        Since the work we may want to note can be a single poem (from a larger collection) and an entire collection (volume) of poems, a single short story and a collection of short stories, 
+	a novel and an anthology, this ontology defines concepts that correspond to all the forms mentioned above—without the need to construct more complex formal-logical structures.
+	</p>
+
+        <p>Most concepts from this ontology are planned to be referred to concepts from other, more developed and more popular ontologies, 
+        while the properties and concepts introduced here will be made 'equivalent' or related in other ways to the base concepts.</p>
+
+        <p>This ontology is still a work-in-progress.</p>
+
+	The ontology has IRI as follows:  <a
+		href="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl">https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology.ttl</a>. 
+
+          <h4 id="publications_ont_pl">2.1.1 Publication Forms Ontology - Polish version</h3>
+  	  This ontology has also a Polish version. All concepts (labels) have the Polish versions. The are made 'equivalent classes' the ones from the main / English version.
+
+	  <p>The Polish version has IRI as follows: 
+	    <a href="https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl">https://michalroj.github.io/ontologies/ontologies/PublicationFormsOntology_pl.ttl</a>. </p>
+
+        <h3 id="exams_ontology">2.2 Exams ontology</h3>
+	This ontology has IRI as follows: <a href="https://michalroj.github.io/ontologies/ontologies/ExamsAndQuestions.ttl">https://michalroj.github.io/ontologies/ontologies/ExamsAndQuestions.ttl</a>
+
+	<h3 id="math_ontology">2.3 Mathematical knowledge (branches) ontology</h3> 
+	This ontology has a prefix: 'https://michalroj.github.io/ontologies/ontologies/MathMetadata_pl.ttl', and has not been developed yet. 
+
+	<p>The development method of this ontology is bottom-up. We first started referring to 'potential' concepts / relations from this ontology from the 'math branches context'
+	(ref. above). 
+	</p>
+	<p>Currently we can say that the ontology will contain the following relations:
+
+	  <ol>
+    		<li>branch</li>
+    		<li>area</li>
+		<li>basic_info</li>
+		<li>range</li>
+    		<li>simple_definition</li>
+    		<li>formula</li>
+    		<li>formula_name</li>
+    		<li>formula_text</li>
+    		<li>formula_comment</li>
+	    	<li>algorithm</li>
+	    	<li>application</li>
+	  </ol>
+
+	</p>
+    </div>
 </body>
+</html>
