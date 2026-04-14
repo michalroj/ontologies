@@ -12,16 +12,43 @@
     "exam_id": "eop:exam_id",
     "variant": "eop:exam_variant",
     "publicationDate": "schema:datePublished",
-    "source": "eop:publically_accessible_link",
+    "source": "eop:publicallyAccessibleLink",
 
-    "number": "eop:question_number",
-    "page": "eop:page_on_the_sheet",
+    "number": "eop:questionNumber",
+    "page": "eop:pageOnTheSheet",
     "exam_sheet_id": { "@id": "eop:exam_sheet_id", "@type": "@id" },
-    "sub_questions": "eop:sub_questions",
-    "related_questions": "eop:related_questions",
+    "sub_questions": "eop:subQuestions",
+    "related_questions": "eop:relatedQuestions",
 
-    "attempt_date": "eop:attempt_date",
-    "points_per_question": "eop:points_per_question",
-    "score": "eop:score"
+    "attempt_date": "eop:attemptDate",
+    "points_per_question": "eop:pointsPerQuestion",
+    "score": "eop:score",
+
+    "analysis_complete": null,
+    "title": "schema:name",
+    "statement": "eop:questionSummary",
+    "given_data": "eop:givenData",
+    "comment": "eop:questionAbstract", 
+    "paraphrase": "eop:questionParaphase",
+    "open_version": "eop:openQuestionParaphase",
+    "tricky": "eop:trickyAreas",
+    "problems": "eop:problems",
+
+    "formulas": { "@id": "eop:usesFormula", "@type": "@id" },
+    "formulas_from_wzory_comment": { "@id": "math_pl:formula", "@type": "@id" },
+    "question": "eop:questionOrTask", 
+    "graphics": "eop:graphicsDescription",
+    "math_branch": null,
+    "math_branch_area": null,
+
+    "solution_approach": "eop:solutionApproach",
+    "needed_knowledge": "eop:neededKnowledge", 
+    "solution": "eop:solutionDescription", 
+    "result_value": "eop:resultValue",
+    "result_sheet": "eop:resultSheetOption",
+
+    "math_branch_nodes": { "@id": "eop:mathBranch", "@type": "@id" },
+    "math_branch_area_nodes": { "@id": "eop:mathArea", "@type": "@id" }
+
   }
 }
